@@ -1,6 +1,7 @@
 {
-  "cleanUrls": true,
-  "rewrites": [
-    { "source": "/faqs", "destination": "/faq.html" }
-  ]
+    "cleanUrls": true,
+    "rewrites": [
+          { "source": "/faqs", "destination": "/faq.html" },
+          { "source": "/images/:path*", "destination": "/:path*" }
+    ]
 }
