@@ -518,26 +518,29 @@
                         (817) 842-1940
                     </div>
                 </div>
-                <form class="form-card anim d1" onsubmit="hs(event)">
+                <form class="form-card anim d1" action="https://formspree.io/f/xjgplvyj" method="POST">
+<input type="hidden" name="_subject" value="New Patio Shades Lead from Gallery">
+<input type="hidden" name="_source" value="Gallery">
+<input type="text" name="_gotcha" style="display:none">
                     <h3>Get Your Free Estimate</h3>
                     <p class="fsub">Quick quote — takes 2 minutes</p>
                     <div class="fr">
                         <div class="fg">
                             <label>First Name</label>
-                            <input type="text" required>
+                            <input type="text" name="first_name" required>
                         </div>
                         <div class="fg">
                             <label>Last Name</label>
-                            <input type="text" required>
+                            <input type="text" name="last_name" required>
                         </div>
                     </div>
                     <div class="fg">
                         <label>Phone</label>
-                        <input type="tel" required>
+                        <input type="tel" name="phone" required>
                     </div>
                     <div class="fg">
                         <label>Email</label>
-                        <input type="email" required>
+                        <input type="email" name="email" required>
                     </div>
                     <div class="fg">
                         <label>City</label>
@@ -582,7 +585,7 @@
                     </div>
                     <div class="fg">
                         <label>Additional Details</label>
-                        <textarea placeholder="Tell us about your space and what you're looking for..."></textarea>
+                        <textarea name="message" placeholder="Tell us about your space and what you're looking for..."></textarea>
                     </div>
                     <button type="submit" class="f-btn">Get Free Estimate</button>
                 </form>
@@ -628,7 +631,7 @@
         window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>40)});
         const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('vis');obs.unobserve(el.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
         document.querySelectorAll('.anim').forEach(el=>obs.observe(el));
-        function hs(e){e.preventDefault();const b=e.target.querySelector('.f-btn');const t=b.textContent;b.textContent='Sending...';b.disabled=true;setTimeout(()=>{b.textContent='✓ Request Sent!';b.style.background='var(--navy-deep)';setTimeout(()=>{b.textContent=t;b.style.background='';b.disabled=false;e.target.reset()},3000)},1200)}
+        ,3000)},1200)}
         document.querySelectorAll('.gal-fbtn').forEach(b=>{b.addEventListener('click',()=>{document.querySelectorAll('.gal-fbtn').forEach(x=>x.classList.remove('active'));b.classList.add('active');const f=b.dataset.filter;document.querySelectorAll('.gal-full .gal-i').forEach(i=>{i.style.display=(!f||i.dataset.cat.includes(f))?'':'none'})})});
     </script>
 </body>

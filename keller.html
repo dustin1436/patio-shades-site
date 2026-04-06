@@ -593,24 +593,27 @@ button{font-family:var(--font);cursor:pointer;border:none}
 <div class="form-card">
 <h3>Request Your Free Consultation</h3>
 <p class="fsub">Keller homeowners — let's design your perfect shade solution</p>
-<form onsubmit="hs(event)">
+<form action="https://formspree.io/f/xjgplvyj" method="POST">
+<input type="hidden" name="_subject" value="New Patio Shades Lead from Keller">
+<input type="hidden" name="_source" value="Keller">
+<input type="text" name="_gotcha" style="display:none">
 <div class="fg">
 <label>Full Name</label>
-<input type="text" required>
+<input type="text" name="full_name" required>
 </div>
 <div class="fr">
 <div class="fg">
 <label>Phone</label>
-<input type="tel" required>
+<input type="tel" name="phone" required>
 </div>
 <div class="fg">
 <label>Email</label>
-<input type="email" required>
+<input type="email" name="email" required>
 </div>
 </div>
 <div class="fg">
 <label>Tell us about your project</label>
-<textarea required></textarea>
+<textarea name="message" required></textarea>
 </div>
 <button type="submit" class="f-btn">Schedule Free Consultation</button>
 </form>
@@ -657,7 +660,7 @@ const nav=document.getElementById('nav');
 window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>40)});
 const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('vis');obs.unobserve(el.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.anim').forEach(el=>obs.observe(el));
-function hs(e){e.preventDefault();const b=e.target.querySelector('.f-btn');const t=b.textContent;b.textContent='Sending...';b.disabled=true;setTimeout(()=>{b.textContent='✓ Request Sent!';b.style.background='var(--navy-deep)';setTimeout(()=>{b.textContent=t;b.style.background='';b.disabled=false;e.target.reset()},3000)},1200)}
+,3000)},1200)}
 </script>
 
 </body>

@@ -721,12 +721,18 @@ button{font-family:var(--font);cursor:pointer;border:none}
 <div class="form-card anim d2">
 <h3>Get Your Free Estimate</h3>
 <p class="fsub">We'll respond within 24 hours</p>
-<form id="lf" onsubmit="hs(event)">
-<div class="fr"><div class="fg"><label>First Name *</label><input type="text" required placeholder="John"></div><div class="fg"><label>Last Name *</label><input type="text" required placeholder="Smith"></div></div>
-<div class="fr"><div class="fg"><label>Phone *</label><input type="tel" required placeholder="(817) 842-1940"></div><div class="fg"><label>Email *</label><input type="email" required placeholder="john@email.com"></div></div>
-<div class="fg"><label>City *</label><select required><option value="">Select your city</option><option>Southlake</option><option>Westlake</option><option>Colleyville</option><option>Keller</option><option>Fort Worth</option><option>Argyle</option><option>Northlake</option><option>Justin</option><option>Denton</option><option>Weatherford</option><option>Granbury</option><option>Trophy Club</option><option>Roanoke</option><option>Flower Mound</option><option>Other</option></select></div>
-<div class="fr"><div class="fg"><label>Project Type</label><select><option value="">Select type</option><option>Patio</option><option>Pergola</option><option>Porch</option><option>Balcony</option><option>Garage</option><option>Other</option></select></div><div class="fg"><label>Shade Preference</label><select><option value="">Select preference</option><option>Motorized / Automated</option><option>Manual</option><option>Not Sure</option></select></div></div>
-<div class="fg"><label>Tell Us About Your Project</label><textarea placeholder="Describe your space or any questions..."></textarea></div>
+<form action="https://formspree.io/f/xjgplvyj" method="POST">
+<input type="hidden" name="_subject" value="New Patio Shades Lead from Home Page">
+<input type="hidden" name="_source" value="Home Page">
+<input type="text" name="_gotcha" style="display:none">
+<div class="fr"><div class="fg"><label>First Name *</label><input type="text" name="first_name" required placeholder="John"></div><div class="fg"><label>Last Name *</label><input type="text" name="last_name" required placeholder="Smith"></div></div>
+<div class="fr"><div class="fg"><label>Phone *</label><input type="tel" name="phone" required placeholder="(817) 842-1940"></div><div class="fg"><label>Email *</label><input type="email" name="email" required placeholder="john@email.com"></div></div>
+<div class="fg"><label>City *</label>
+                            <select name="city" required><option value="">Select your city</option><option>Southlake</option><option>Westlake</option><option>Colleyville</option><option>Keller</option><option>Fort Worth</option><option>Argyle</option><option>Northlake</option><option>Justin</option><option>Denton</option><option>Weatherford</option><option>Granbury</option><option>Trophy Club</option><option>Roanoke</option><option>Flower Mound</option><option>Other</option></select></div>
+<div class="fr"><div class="fg"><label>Project Type</label>
+                                <select name="project_type"><option value="">Select type</option><option>Patio</option><option>Pergola</option><option>Porch</option><option>Balcony</option><option>Garage</option><option>Other</option></select></div><div class="fg"><label>Shade Preference</label>
+                                <select name="shade_preference"><option value="">Select preference</option><option>Motorized / Automated</option><option>Manual</option><option>Not Sure</option></select></div></div>
+<div class="fg"><label>Tell Us About Your Project</label><textarea name="message" placeholder="Describe your space or any questions..."></textarea></div>
 <button type="submit" class="f-btn">Request My Free Estimate</button>
 </form>
 </div>
@@ -772,7 +778,7 @@ const nav=document.getElementById('nav');
 window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>40)});
 const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('vis');obs.unobserve(el.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.anim').forEach(el=>obs.observe(el));
-function hs(e){e.preventDefault();const b=e.target.querySelector('.f-btn');const t=b.textContent;b.textContent='Sending...';b.disabled=true;setTimeout(()=>{b.textContent='✓ Request Sent!';b.style.background='var(--navy-deep)';setTimeout(()=>{b.textContent=t;b.style.background='';b.disabled=false;e.target.reset()},3000)},1200)}
+,3000)},1200)}
 </script>
 </body>
 </html>
