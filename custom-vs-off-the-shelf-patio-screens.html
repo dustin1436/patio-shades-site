@@ -544,7 +544,7 @@ const nav=document.getElementById('nav');
 window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>40)});
 const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('vis');obs.unobserve(el.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.anim').forEach(el=>obs.observe(el));
-function hs(e){e.preventDefault();const b=e.target.querySelector('.f-btn');const t=b.textContent;b.textContent='Sending...';b.disabled=true;setTimeout(()=>{b.textContent='✓ Request Sent!';b.style.background='var(--navy-deep)';setTimeout(()=>{b.textContent=t;b.style.background='';b.disabled=false;e.target.reset()},3000)},1200)}
+function hs(e){e.preventDefault();const b=e.target.querySelector('.f-btn');const t=b.textContent;b.textContent='Sending...';b.disabled=true;setTimeout(()=>{b.textContent='✓ Request Sent!';b.style.background='var(--navy-deep)';setTimeout(()=>{b.textContent=t;b.style.background='';b.disabled=false;e.target.reset()}
 </script>
 
 <style>
@@ -671,8 +671,6 @@ function hs(e){e.preventDefault();const b=e.target.querySelector('.f-btn');const
     color: #3A4D5C;
     margin-bottom: 32px;
 }
-
-
 
 @media (max-width: 768px) {
     .blog-hero {

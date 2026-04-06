@@ -631,8 +631,7 @@
         window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>40)});
         const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('vis');obs.unobserve(el.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
         document.querySelectorAll('.anim').forEach(el=>obs.observe(el));
-        ,3000)},1200)}
-        document.querySelectorAll('.gal-fbtn').forEach(b=>{b.addEventListener('click',()=>{document.querySelectorAll('.gal-fbtn').forEach(x=>x.classList.remove('active'));b.classList.add('active');const f=b.dataset.filter;document.querySelectorAll('.gal-full .gal-i').forEach(i=>{i.style.display=(!f||i.dataset.cat.includes(f))?'':'none'})})});
+document.querySelectorAll('.gal-fbtn').forEach(b=>{b.addEventListener('click',()=>{document.querySelectorAll('.gal-fbtn').forEach(x=>x.classList.remove('active'));b.classList.add('active');const f=b.dataset.filter;document.querySelectorAll('.gal-full .gal-i').forEach(i=>{i.style.display=(!f||i.dataset.cat.includes(f))?'':'none'})})});
     </script>
 </body>
 </html>
