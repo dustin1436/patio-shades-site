@@ -1,7 +1,10 @@
 {
-    "cleanUrls": true,
-    "rewrites": [
-          { "source": "/faqs", "destination": "/faq.html" },
-          { "source": "/images/:path*", "destination": "/:path*" }
-    ]
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/faqs", "destination": "/faq.html" },
+    { "source": "/images/:path*", "destination": "/:path*" },
+    { "source": "/products/:path*", "destination": "/:path*" },
+    { "source": "/blog/:path*", "destination": "/:path*" },
+    { "source": "/cities/:path*", "destination": "/:path*" }
+  ]
 }
