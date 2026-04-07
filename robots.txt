@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://patio-shades-site-rev01.vercel.app/sitemap.xml
+Sitemap: https://www.patioshadesdfw.com/sitemap.xml
