@@ -182,15 +182,30 @@ button{font-family:var(--font);cursor:pointer;border:none}
 .prod-link:hover{gap:10px}
 .prod-link svg{width:15px;height:15px}
 
-/* GALLERY */
+/* GALLERY CAROUSEL */
+.gal-carousel{position:relative;overflow:hidden;border-radius:var(--radius-lg)}
+.gal-track{display:flex;transition:transform .5s var(--ease)}
+.gal-slide{min-width:100%;position:relative}
+.gal-slide img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.gal-slide .gal-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.5) 0%,transparent 50%)}
+.gal-slide .gal-city{position:absolute;bottom:16px;left:20px;color:var(--white);font-size:.95rem;font-weight:700;letter-spacing:.02em}
+.gal-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.9);border:none;width:44px;height:44px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 12px rgba(0,0,0,0.15);z-index:2;transition:all .2s}
+.gal-nav:hover{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,0.2)}
+.gal-nav.prev{left:14px}
+.gal-nav.next{right:14px}
+.gal-nav svg{width:20px;height:20px;stroke:var(--navy);stroke-width:2.5}
+.gal-dots{display:flex;justify-content:center;gap:8px;margin-top:18px}
+.gal-dot{width:10px;height:10px;border-radius:50%;background:rgba(0,0,0,0.15);border:none;cursor:pointer;transition:all .2s;padding:0}
+.gal-dot.active{background:var(--orange);transform:scale(1.2)}
+/* GALLERY GRID (gallery page) */
 .gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:10px}
 .gal-i{border-radius:var(--radius);overflow:hidden;position:relative;cursor:pointer}
 .gal-i img{width:100%;height:100%;object-fit:cover;transition:transform .4s var(--ease)}
 .gal-i:hover img{transform:scale(1.07)}
 .gal-i.w2{grid-column:span 2}
-.gal-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.5) 0%,transparent 50%);opacity:0;transition:opacity .3s}
-.gal-i:hover .gal-ov{opacity:1}
-.gal-city{position:absolute;bottom:10px;left:10px;color:var(--white);font-size:.75rem;font-weight:700}
+.gal-i-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.5) 0%,transparent 50%);opacity:0;transition:opacity .3s}
+.gal-i:hover .gal-i-ov{opacity:1}
+.gal-i-city{position:absolute;bottom:10px;left:10px;color:var(--white);font-size:.75rem;font-weight:700}
 
 /* SERVICE AREA */
 .area-wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
@@ -709,14 +724,22 @@ button{font-family:var(--font);cursor:pointer;border:none}
 <section class="sec" id="gallery">
 <div class="container">
 <div class="sec-hdr anim"><div class="sec-ey">Our Work</div><h2>Real Homes. Real Results.</h2><p>Every installation is custom. Here's a glimpse of projects across DFW.</p></div>
-<div class="gal-grid">
-<div class="gal-i w2 anim"><img src="images/homepage_hero_8.jpg" alt="Frisco"><div class="gal-ov"></div><div class="gal-city">Southlake, TX</div></div>
-<div class="gal-i anim d1"><img src="images/homepage_hero_9.jpg" alt="McKinney"><div class="gal-ov"></div><div class="gal-city">Fort Worth, TX</div></div>
-<div class="gal-i anim d2"><img src="images/homepage_hero_10.jpg" alt="Plano"><div class="gal-ov"></div><div class="gal-city">Keller, TX</div></div>
-<div class="gal-i anim d1"><img src="images/homepage_hero_11.jpg" alt="Princeton"><div class="gal-ov"></div><div class="gal-city">Princeton, TX</div></div>
-<div class="gal-i anim d2"><img src="images/homepage_hero_12.jpg" alt="DFW"><div class="gal-ov"></div><div class="gal-city">DFW Area</div></div>
-<div class="gal-i w2 anim d3"><img src="images/homepage_hero_13.jpg" alt="Plano"><div class="gal-ov"></div><div class="gal-city">Keller, TX</div></div>
+<div class="gal-carousel anim" id="homeCarousel">
+<div class="gal-track" id="homeTrack">
+<div class="gal-slide"><img src="images/Colleyville_Two_Story_Patio_Shades_Retracted.jpg" alt="Two-story patio shade installation in Colleyville, Texas"><div class="gal-ov"></div><div class="gal-city">Colleyville, TX</div></div>
+<div class="gal-slide"><img src="images/Colleyville_Motorized_Patio_Shades_Deployed.jpg" alt="Motorized patio shades deployed on upper deck in Colleyville"><div class="gal-ov"></div><div class="gal-city">Colleyville, TX</div></div>
+<div class="gal-slide"><img src="images/Keller_Brick_Patio_Shade_Dining.jpg" alt="Patio shade over outdoor dining area on brick home in Keller, Texas"><div class="gal-ov"></div><div class="gal-city">Keller, TX</div></div>
+<div class="gal-slide"><img src="images/Flower_Mound_Corner_Patio_Screens.jpg" alt="Corner patio screen installation in Flower Mound, Texas"><div class="gal-ov"></div><div class="gal-city">Flower Mound, TX</div></div>
+<div class="gal-slide"><img src="images/Grapevine_Modern_Patio_Screen_Mesh.jpg" alt="Modern mesh patio screen on home in Grapevine, Texas"><div class="gal-ov"></div><div class="gal-city">Grapevine, TX</div></div>
+<div class="gal-slide"><img src="images/Westlake_Multi_Panel_Patio_Shades.jpg" alt="Multi-panel patio shade system in Westlake, Texas"><div class="gal-ov"></div><div class="gal-city">Westlake, TX</div></div>
+<div class="gal-slide"><img src="images/Fort_Worth_Garage_Screen_Closed.jpg" alt="Motorized garage screen fully closed on brick home in Fort Worth"><div class="gal-ov"></div><div class="gal-city">Fort Worth, TX</div></div>
+<div class="gal-slide"><img src="images/Fort_Worth_Garage_Screen_Open.jpg" alt="Motorized garage screen partially open showing interior in Fort Worth"><div class="gal-ov"></div><div class="gal-city">Fort Worth, TX</div></div>
+<div class="gal-slide"><img src="images/Roanoke_Patio_Shade_Exterior_View.jpg" alt="Exterior patio shade with landscaping in Roanoke, Texas"><div class="gal-ov"></div><div class="gal-city">Roanoke, TX</div></div>
 </div>
+<button class="gal-nav prev" onclick="moveCarousel(-1)" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+<button class="gal-nav next" onclick="moveCarousel(1)" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg></button>
+</div>
+<div class="gal-dots" id="homeDots"></div>
 <div style="text-align:center;margin-top:44px" class="anim"><a href="/gallery" class="btn btn-o">View Full Gallery <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:17px;height:17px"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
 </div>
 </section>
@@ -733,7 +756,7 @@ button{font-family:var(--font);cursor:pointer;border:none}
 <span class="area-city">Southlake</span><span class="area-city">Westlake</span><span class="area-city">Colleyville</span><span class="area-city">Keller</span><span class="area-city">Fort Worth</span><span class="area-city">Argyle</span><span class="area-city">Northlake</span><span class="area-city">Justin</span><span class="area-city">Denton</span><span class="area-city">Weatherford</span><span class="area-city">Granbury</span><span class="area-city">Trophy Club</span><span class="area-city">Roanoke</span><span class="area-city">Flower Mound</span>
 </div>
 </div>
-<div class="area-img anim d2"><img src="images/homepage_hero_14.jpg" alt="DFW installation"></div>
+<div class="area-img anim d2"><img src="images/Colleyville_Two_Story_Patio_Shades_Retracted.jpg" alt="Custom patio shade installation on two-story home in DFW area"></div>
 </div>
 </div>
 </section>
@@ -838,6 +861,20 @@ const nav=document.getElementById('nav');
 window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>40)});
 const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('vis');obs.unobserve(el.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.anim').forEach(el=>obs.observe(el));
+
+/* Carousel */
+let cIdx=0;
+const track=document.getElementById('homeTrack');
+const slides=track?track.children.length:0;
+const dotsC=document.getElementById('homeDots');
+if(track&&dotsC){
+for(let i=0;i<slides;i++){const d=document.createElement('button');d.className='gal-dot'+(i===0?' active':'');d.onclick=()=>{cIdx=i;updCarousel()};dotsC.appendChild(d)}
+}
+function moveCarousel(dir){cIdx=(cIdx+dir+slides)%slides;updCarousel()}
+function updCarousel(){if(!track)return;track.style.transform='translateX(-'+cIdx*100+'%)';document.querySelectorAll('.gal-dot').forEach((d,i)=>{d.classList.toggle('active',i===cIdx)})}
+let autoPlay=setInterval(()=>moveCarousel(1),5000);
+document.getElementById('homeCarousel')?.addEventListener('mouseenter',()=>clearInterval(autoPlay));
+document.getElementById('homeCarousel')?.addEventListener('mouseleave',()=>{autoPlay=setInterval(()=>moveCarousel(1),5000)});
 </script>
 </body>
 </html>
