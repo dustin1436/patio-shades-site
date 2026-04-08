@@ -182,13 +182,13 @@ button{font-family:var(--font);cursor:pointer;border:none}
 .prod-link:hover{gap:10px}
 .prod-link svg{width:15px;height:15px}
 
-/* GALLERY CAROUSEL */
+/* GALLERY CAROUSEL — 3 per view */
 .gal-carousel{position:relative;overflow:hidden;border-radius:var(--radius-lg)}
 .gal-track{display:flex;transition:transform .5s var(--ease)}
-.gal-slide{min-width:100%;position:relative}
-.gal-slide img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
-.gal-slide .gal-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.5) 0%,transparent 50%)}
-.gal-slide .gal-city{position:absolute;bottom:16px;left:20px;color:var(--white);font-size:.95rem;font-weight:700;letter-spacing:.02em}
+.gal-slide{min-width:33.333%;position:relative;box-sizing:border-box;padding:0 8px}
+.gal-slide img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:12px}
+.gal-slide .gal-ov{position:absolute;inset:0 8px;border-radius:12px;background:linear-gradient(to top,rgba(0,0,0,0.55) 0%,transparent 45%)}
+.gal-slide .gal-city{position:absolute;bottom:14px;left:22px;color:var(--white);font-size:.85rem;font-weight:700;letter-spacing:.02em}
 .gal-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.9);border:none;width:44px;height:44px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 12px rgba(0,0,0,0.15);z-index:2;transition:all .2s}
 .gal-nav:hover{background:var(--white);box-shadow:0 4px 20px rgba(0,0,0,0.2)}
 .gal-nav.prev{left:14px}
@@ -197,6 +197,7 @@ button{font-family:var(--font);cursor:pointer;border:none}
 .gal-dots{display:flex;justify-content:center;gap:8px;margin-top:18px}
 .gal-dot{width:10px;height:10px;border-radius:50%;background:rgba(0,0,0,0.15);border:none;cursor:pointer;transition:all .2s;padding:0}
 .gal-dot.active{background:var(--orange);transform:scale(1.2)}
+@media(max-width:768px){.gal-slide{min-width:100%;padding:0}.gal-slide .gal-ov{inset:0}.gal-slide img{aspect-ratio:16/9}}
 /* GALLERY GRID (gallery page) */
 .gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:10px}
 .gal-i{border-radius:var(--radius);overflow:hidden;position:relative;cursor:pointer}
@@ -862,19 +863,21 @@ window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scr
 const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('vis');obs.unobserve(el.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.anim').forEach(el=>obs.observe(el));
 
-/* Carousel */
+/* Carousel — 3 per view on desktop, 1 on mobile */
 let cIdx=0;
 const track=document.getElementById('homeTrack');
 const slides=track?track.children.length:0;
 const dotsC=document.getElementById('homeDots');
-if(track&&dotsC){
-for(let i=0;i<slides;i++){const d=document.createElement('button');d.className='gal-dot'+(i===0?' active':'');d.onclick=()=>{cIdx=i;updCarousel()};dotsC.appendChild(d)}
-}
-function moveCarousel(dir){cIdx=(cIdx+dir+slides)%slides;updCarousel()}
+let perPage=window.innerWidth<=768?1:3;
+let totalPages=Math.ceil(slides/perPage);
+function buildDots(){if(!dotsC)return;dotsC.innerHTML='';for(let i=0;i<totalPages;i++){const d=document.createElement('button');d.className='gal-dot'+(i===0?' active':'');d.onclick=()=>{cIdx=i;updCarousel()};dotsC.appendChild(d)}}
+buildDots();
+function moveCarousel(dir){cIdx=(cIdx+dir+totalPages)%totalPages;updCarousel()}
 function updCarousel(){if(!track)return;track.style.transform='translateX(-'+cIdx*100+'%)';document.querySelectorAll('.gal-dot').forEach((d,i)=>{d.classList.toggle('active',i===cIdx)})}
 let autoPlay=setInterval(()=>moveCarousel(1),5000);
 document.getElementById('homeCarousel')?.addEventListener('mouseenter',()=>clearInterval(autoPlay));
 document.getElementById('homeCarousel')?.addEventListener('mouseleave',()=>{autoPlay=setInterval(()=>moveCarousel(1),5000)});
+window.addEventListener('resize',()=>{const np=window.innerWidth<=768?1:3;if(np!==perPage){perPage=np;totalPages=Math.ceil(slides/perPage);cIdx=0;buildDots();updCarousel()}});
 </script>
 </body>
 </html>
