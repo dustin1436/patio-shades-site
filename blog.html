@@ -91,6 +91,12 @@ button{font-family:var(--font);cursor:pointer;border:none}
 .nav-cta:hover{background:var(--orange-deep);transform:translateY(-1px);box-shadow:var(--shadow-orange)}
 .nav-toggle{display:none;background:none;padding:8px;flex-direction:column;gap:5px}
 .nav-toggle span{width:22px;height:2px;background:var(--navy);border-radius:2px}
+.mob-nav{display:none;position:fixed;top:var(--nav-h);left:0;right:0;bottom:0;background:var(--white);z-index:999;padding:20px 28px;flex-direction:column;gap:3px;overflow-y:auto}
+.mob-nav.open{display:flex}
+.mob-nav a{padding:13px 16px;font-size:.95rem;font-weight:500;color:var(--navy);border-radius:var(--radius);transition:all .2s}
+.mob-nav a:hover{background:var(--cream);color:var(--orange)}
+.mob-nav .msub{padding-left:30px;font-size:.88rem;color:var(--warm-gray)}
+.mob-nav .mcta{background:var(--orange);color:var(--white);text-align:center;border-radius:100px;font-weight:700;margin-top:14px;padding:15px}
 .sec{padding:96px 0}
 .sec-cream{background:var(--cream)}
 .sec-dark{background:var(--navy-deep);color:var(--white)}
@@ -467,6 +473,14 @@ button{font-family:var(--font);cursor:pointer;border:none}
 </div>
 </nav>
 
+<div class="mob-nav" id="mnav">
+<a href="/">Home</a><a href="/about">About Us</a>
+<a href="/products/exterior-patio-shades" class="msub">Exterior Patio Shades</a>
+<a href="/products/automated-patio-shades" class="msub">Automated Shades & Screens</a>
+<a href="/gallery">Gallery</a><a href="/blog">Blog</a><a href="/faq">FAQs</a><a href="/contact">Contact</a>
+<a href="#estimate" class="mcta" onclick="document.getElementById('mnav').classList.remove('open')">Get Free Estimate</a>
+</div>
+
 <main>
 
 <section class="blog-listing-hero sec sec-dark">
@@ -614,7 +628,7 @@ document.querySelectorAll('.faq-toggle').forEach(q=>{q.addEventListener('click',
 
 <style>
 .blog-listing-hero {
-    padding: 96px 24px;
+    padding: calc(var(--nav-h) + 60px) 24px 96px 24px;
     text-align: center;
     background: linear-gradient(135deg, #1E2D3A 0%, #3A4D5C 100%);
 }
