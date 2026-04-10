@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.patioshadesdfw.com/sitemap.xml
+
+# Test: GitHub Desktop connection verified April 9, 2026
