@@ -112,6 +112,9 @@
         .gal-full .gal-i:hover img{transform:scale(1.05)}
         .gal-full .gal-i .gal-cap{position:absolute;bottom:0;left:0;right:0;padding:14px 18px;background:linear-gradient(transparent,rgba(0,0,0,0.6));color:var(--white);font-size:.82rem;font-weight:600;opacity:0;transition:opacity .3s}
         .gal-full .gal-i:hover .gal-cap{opacity:1}
+        .gal-project{margin-bottom:32px}
+        .gal-project-label{grid-column:1/-1;font-size:.95rem;font-weight:700;color:var(--navy);padding:8px 0 4px;border-bottom:2px solid var(--orange);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+        .gal-project-label .gal-loc{font-weight:400;color:var(--warm-gray);font-size:.85rem}
         @media(max-width:768px){.gal-full{grid-template-columns:1fr 1fr}}
         @media(max-width:480px){.gal-full{grid-template-columns:1fr}}
 
@@ -473,104 +476,277 @@
                 <button class="gal-fbtn" data-filter="motorized">Motorized</button>
                 <button class="gal-fbtn" data-filter="manual">Manual</button>
                 <button class="gal-fbtn" data-filter="poolside">Poolside</button>
+                <button class="gal-fbtn" data-filter="detail">Detail</button>
             </div>
 
             <div class="gal-full">
-                <div class="gal-i" data-cat="motorized">
-                    <img src="images/Colleyville_Two_Story_Patio_Shades_Retracted.jpg" alt="Two-story patio shade installation in Colleyville, Texas">
-                    <div class="gal-cap">Two-Story Install (Retracted) — Colleyville, TX</div>
+                <!-- Project: Luxury Poolside Install -->
+                <div class="gal-project-label">Luxury Poolside Install <span class="gal-loc">— Southlake, TX</span></div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Southlake_Luxury_Patio_Before.jpg" alt="Luxury patio with pool view before shade installation in Southlake Texas">
+                    <div class="gal-cap">Before — Southlake, TX</div>
                 </div>
                 <div class="gal-i" data-cat="motorized poolside">
-                    <img src="images/Fort_Worth_Motorized_Patio_Shade.jpg" alt="Motorized Shade in Fort Worth">
-                    <div class="gal-cap">Motorized Shade — Fort Worth, TX</div>
+                    <img src="images/Southlake_Motorized_Patio_Shade_Partial.jpg" alt="Motorized patio shade partially deployed on luxury poolside patio in Southlake Texas">
+                    <div class="gal-cap">Shade Partially Deployed — Southlake, TX</div>
                 </div>
-                <div class="gal-i" data-cat="manual">
-                    <img src="images/Keller_Brick_Patio_Shade_Dining.jpg" alt="Patio shade over outdoor dining area on brick home in Keller, Texas">
-                    <div class="gal-cap">Outdoor Dining Shade — Keller, TX</div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Southlake_Motorized_Patio_Shade_Deployed.jpg" alt="Motorized patio shade fully deployed with pool view in Southlake Texas">
+                    <div class="gal-cap">Shade Fully Deployed — Southlake, TX</div>
+                </div>
+
+                <!-- Project: Modern Farmhouse Poolside -->
+                <div class="gal-project-label">Modern Farmhouse Poolside <span class="gal-loc">— Westlake, TX</span></div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Westlake_Poolside_Patio_Before.jpg" alt="Modern farmhouse poolside patio before shade installation in Westlake Texas">
+                    <div class="gal-cap">Before — Westlake, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Westlake_Motorized_Patio_Shades_Pool_Wide.jpg" alt="Motorized patio shades deployed by pool at modern farmhouse in Westlake Texas">
+                    <div class="gal-cap">Shades Deployed Wide — Westlake, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Westlake_Motorized_Patio_Shade_Pool_Front.jpg" alt="Front view of motorized patio shade by pool in Westlake Texas">
+                    <div class="gal-cap">Front View — Westlake, TX</div>
+                </div>
+                <div class="gal-i" data-cat="detail">
+                    <img src="images/Westlake_Patio_Shade_Housing_Detail.jpg" alt="Close-up of patio shade housing and roller mechanism in Westlake Texas">
+                    <div class="gal-cap">Housing Detail — Westlake, TX</div>
+                </div>
+
+                <!-- Project: Mediterranean Estate -->
+                <div class="gal-project-label">Mediterranean Estate <span class="gal-loc">— Colleyville, TX</span></div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Colleyville_Mediterranean_Patio_Before.jpg" alt="Mediterranean style patio before shade installation in Colleyville Texas">
+                    <div class="gal-cap">Before — Colleyville, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Colleyville_Mediterranean_Shades_Deployed.jpg" alt="Motorized shades deployed on Mediterranean home in Colleyville Texas">
+                    <div class="gal-cap">Shades Deployed — Colleyville, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Colleyville_Mediterranean_Shades_Partial.jpg" alt="Patio shades partially deployed on Mediterranean estate in Colleyville Texas">
+                    <div class="gal-cap">Partial Deployment — Colleyville, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Colleyville_Mediterranean_Shades_Side.jpg" alt="Side view of motorized patio shades on Mediterranean home in Colleyville Texas">
+                    <div class="gal-cap">Side View — Colleyville, TX</div>
+                </div>
+
+                <!-- Project: Stone Arched Poolside -->
+                <div class="gal-project-label">Stone Arched Poolside <span class="gal-loc">— Flower Mound, TX</span></div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Flower_Mound_Exterior_Shade_Close.jpg" alt="Close view of arched patio shades by pool in Flower Mound Texas">
+                    <div class="gal-cap">Close View — Flower Mound, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Flower_Mound_Arched_Patio_Shades_Wide.jpg" alt="Wide view of arched patio shades with pool in Flower Mound Texas">
+                    <div class="gal-cap">Arched Shades Wide — Flower Mound, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Flower_Mound_Arched_Patio_Shades_Side.jpg" alt="Side view of arched patio shades in Flower Mound Texas">
+                    <div class="gal-cap">Side View — Flower Mound, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Flower_Mound_Arched_Patio_Shades_Pool.jpg" alt="Arched patio shades with pool and hot tub in Flower Mound Texas">
+                    <div class="gal-cap">Pool View — Flower Mound, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Flower_Mound_Arched_Patio_Shades_Grill.jpg" alt="Arched patio shades by outdoor grill area in Flower Mound Texas">
+                    <div class="gal-cap">Grill Area — Flower Mound, TX</div>
+                </div>
+
+                <!-- Project: Hill Country Modern -->
+                <div class="gal-project-label">Hill Country Modern <span class="gal-loc">— Fort Worth, TX</span></div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Fort_Worth_Motorized_Patio_Shade.jpg" alt="Motorized patio shade on stone modern home with pool in Fort Worth Texas">
+                    <div class="gal-cap">Evening View — Fort Worth, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Fort_Worth_Motorized_Patio_Shade_Fire_Pit.jpg" alt="Motorized patio shade near fire pit and pool in Fort Worth Texas">
+                    <div class="gal-cap">Fire Pit View — Fort Worth, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Fort_Worth_Motorized_Patio_Shade_Evening.jpg" alt="Evening view of motorized patio shade on modern home in Fort Worth Texas">
+                    <div class="gal-cap">Golden Hour — Fort Worth, TX</div>
+                </div>
+
+                <!-- Project: Modern Farmhouse Patio -->
+                <div class="gal-project-label">Modern Farmhouse Patio <span class="gal-loc">— Argyle, TX</span></div>
+                <div class="gal-i" data-cat="motorized">
+                    <img src="images/Argyle_Covered_Patio_Before.jpg" alt="Covered patio before shade installation on modern farmhouse in Argyle Texas">
+                    <div class="gal-cap">Before — Argyle, TX</div>
                 </div>
                 <div class="gal-i" data-cat="motorized">
-                    <img src="images/Denton_Automated_Patio_Shade_Porch.jpg" alt="Automated Porch Screen in Denton">
+                    <img src="images/Argyle_Motorized_Patio_Shades_Front.jpg" alt="Motorized patio shades deployed on modern farmhouse in Argyle Texas">
+                    <div class="gal-cap">Shades Deployed — Argyle, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized">
+                    <img src="images/Argyle_Motorized_Patio_Shades_Side.jpg" alt="Side view of motorized patio shades on farmhouse in Argyle Texas">
+                    <div class="gal-cap">Side View — Argyle, TX</div>
+                </div>
+
+                <!-- Project: Poolside Brick Home -->
+                <div class="gal-project-label">Poolside Brick Home <span class="gal-loc">— Benbrook, TX</span></div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Benbrook_Poolside_Patio_Before.jpg" alt="Brick home poolside patio before shade installation in Benbrook Texas">
+                    <div class="gal-cap">Before — Benbrook, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Benbrook_Motorized_Patio_Shade_Pool.jpg" alt="Motorized patio shade deployed by pool in Benbrook Texas">
+                    <div class="gal-cap">Shade Deployed — Benbrook, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Benbrook_Two_Panel_Patio_Shades.jpg" alt="Two panel motorized patio shades on brick home in Benbrook Texas">
+                    <div class="gal-cap">Two-Panel Shades — Benbrook, TX</div>
+                </div>
+                <div class="gal-i" data-cat="detail">
+                    <img src="images/Benbrook_Patio_Shade_Housing_Detail.jpg" alt="Close-up of patio shade housing on brick home in Benbrook Texas">
+                    <div class="gal-cap">Housing Detail — Benbrook, TX</div>
+                </div>
+
+                <!-- Project: Pergola and Outdoor Living -->
+                <div class="gal-project-label">Pergola and Outdoor Living <span class="gal-loc">— Trophy Club, TX</span></div>
+                <div class="gal-i" data-cat="motorized">
+                    <img src="images/Trophy_Club_Home_Exterior_Patio_Shade.jpg" alt="Patio shade on home exterior with outdoor kitchen in Trophy Club Texas">
+                    <div class="gal-cap">Outdoor Kitchen — Trophy Club, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Trophy_Club_Pergola_Patio_Before.jpg" alt="Pergola patio before shade installation in Trophy Club Texas">
+                    <div class="gal-cap">Before — Trophy Club, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Trophy_Club_Pergola_Patio_Shade_Deployed.jpg" alt="Patio shade deployed on pergola by pool in Trophy Club Texas">
+                    <div class="gal-cap">Shade Deployed — Trophy Club, TX</div>
+                </div>
+
+                <!-- Project: Two-Story Upper Deck -->
+                <div class="gal-project-label">Two-Story Upper Deck <span class="gal-loc">— Colleyville, TX</span></div>
+                <div class="gal-i" data-cat="motorized">
+                    <img src="images/Colleyville_Two_Story_Patio_Shades_Retracted.jpg" alt="Two-story patio shades retracted on upper deck in Colleyville Texas">
+                    <div class="gal-cap">Shades Retracted — Colleyville, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized">
+                    <img src="images/Colleyville_Motorized_Patio_Shades_Deployed.jpg" alt="Motorized patio shades deployed on two-story home in Colleyville Texas">
+                    <div class="gal-cap">Shades Deployed — Colleyville, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized">
+                    <img src="images/Colleyville_Upper_Deck_Patio_Screen.jpg" alt="Upper deck patio screen on two-story home in Colleyville Texas">
+                    <div class="gal-cap">Upper Deck Screen — Colleyville, TX</div>
+                </div>
+
+                <!-- Project: Brick Covered Patio -->
+                <div class="gal-project-label">Brick Covered Patio <span class="gal-loc">— Keller, TX</span></div>
+                <div class="gal-i" data-cat="motorized">
+                    <img src="images/Keller_Covered_Patio_Before.jpg" alt="Covered patio before shade installation on brick home in Keller Texas">
+                    <div class="gal-cap">Before — Keller, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized">
+                    <img src="images/Keller_Motorized_Patio_Shades_Front.jpg" alt="Motorized patio shades deployed on brick home in Keller Texas">
+                    <div class="gal-cap">Shades Deployed — Keller, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized">
+                    <img src="images/Keller_Motorized_Patio_Shades_Corner.jpg" alt="Corner view of motorized patio shades on brick home in Keller Texas">
+                    <div class="gal-cap">Corner View — Keller, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized">
+                    <img src="images/Keller_Brick_Patio_Shade_Dining.jpg" alt="Patio shade over outdoor dining area on brick home in Keller Texas">
+                    <div class="gal-cap">Dining Area Shade — Keller, TX</div>
+                </div>
+
+                <!-- Project: Automated Porch Screen -->
+                <div class="gal-project-label">Automated Porch Screen <span class="gal-loc">— Denton, TX</span></div>
+                <div class="gal-i" data-cat="motorized">
+                    <img src="images/Denton_Automated_Patio_Shade_Porch.jpg" alt="Automated patio shade on porch in Denton Texas">
                     <div class="gal-cap">Automated Porch Screen — Denton, TX</div>
                 </div>
-                <div class="gal-i" data-cat="manual">
-                    <img src="images/Flower_Mound_Corner_Patio_Screens.jpg" alt="Corner patio screen installation in Flower Mound, Texas">
-                    <div class="gal-cap">Corner Patio Screens — Flower Mound, TX</div>
+                <div class="gal-i" data-cat="motorized">
+                    <img src="images/Denton_Automated_Patio_Shade_Close.jpg" alt="Close view of automated patio shade on porch in Denton Texas">
+                    <div class="gal-cap">Close View — Denton, TX</div>
+                </div>
+
+                <!-- Project: Outdoor Kitchen Patio -->
+                <div class="gal-project-label">Outdoor Kitchen Patio <span class="gal-loc">— Stephenville, TX</span></div>
+                <div class="gal-i" data-cat="motorized">
+                    <img src="images/Stephenville_Outdoor_Kitchen_Patio_Before.jpg" alt="Outdoor kitchen patio before shade installation in Stephenville Texas">
+                    <div class="gal-cap">Before — Stephenville, TX</div>
                 </div>
                 <div class="gal-i" data-cat="motorized">
-                    <img src="images/Northlake_Exterior_Patio_Shade_Automated.jpg" alt="Modern Farmhouse in Northlake">
-                    <div class="gal-cap">Modern Farmhouse — Northlake, TX</div>
+                    <img src="images/Stephenville_Patio_Shades_Wide.jpg" alt="Patio shades deployed on brick home in Stephenville Texas">
+                    <div class="gal-cap">Shades Deployed Wide — Stephenville, TX</div>
                 </div>
                 <div class="gal-i" data-cat="motorized">
-                    <img src="images/Grapevine_Modern_Patio_Screen_Mesh.jpg" alt="Modern mesh patio screen on home in Grapevine, Texas">
-                    <div class="gal-cap">Modern Mesh Screen — Grapevine, TX</div>
+                    <img src="images/Stephenville_Motorized_Patio_Shade_Deployed.jpg" alt="Motorized patio shade close view in Stephenville Texas">
+                    <div class="gal-cap">Shade Deployed Close — Stephenville, TX</div>
                 </div>
-                <div class="gal-i" data-cat="manual poolside">
-                    <img src="images/Fort_Worth_Exterior_Shade_Wide.jpg" alt="Luxury Arched Shades in Fort Worth">
-                    <div class="gal-cap">Luxury Arched Shades — Fort Worth, TX</div>
+
+                <!-- Project: Garage Screen -->
+                <div class="gal-project-label">Garage Screen <span class="gal-loc">— Fort Worth, TX</span></div>
+                <div class="gal-i" data-cat="motorized">
+                    <img src="images/Fort_Worth_Garage_Screen_Open.jpg" alt="Motorized garage screen partially open in Fort Worth Texas">
+                    <div class="gal-cap">Garage Screen (Open) — Fort Worth, TX</div>
                 </div>
                 <div class="gal-i" data-cat="motorized">
-                    <img src="images/Colleyville_Motorized_Patio_Shades_Deployed.jpg" alt="Motorized patio shades deployed on upper deck in Colleyville">
-                    <div class="gal-cap">Motorized Shades (Deployed) — Colleyville, TX</div>
+                    <img src="images/Fort_Worth_Garage_Screen_Closed.jpg" alt="Motorized garage screen fully closed on brick home in Fort Worth Texas">
+                    <div class="gal-cap">Garage Screen (Closed) — Fort Worth, TX</div>
+                </div>
+                <div class="gal-i" data-cat="detail">
+                    <img src="images/Fort_Worth_Screen_Housing_Detail.jpg" alt="Close-up of screen housing hardware on brick home in Fort Worth Texas">
+                    <div class="gal-cap">Housing Detail — Fort Worth, TX</div>
+                </div>
+
+                <!-- Individual items without project header -->
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Denton_Patio_Shade_Up.jpg" alt="Retractable patio screen by pool at golden hour in Denton Texas">
+                    <div class="gal-cap">Poolside Screen — Denton, TX</div>
                 </div>
                 <div class="gal-i" data-cat="motorized poolside">
-                    <img src="images/Colleyville_Patio_Shade_Down.jpg" alt="Poolside Screen in Colleyville">
+                    <img src="images/Colleyville_Patio_Shade_Down.jpg" alt="Poolside patio screen deployed at golden hour in Colleyville Texas">
                     <div class="gal-cap">Poolside Screen — Colleyville, TX</div>
                 </div>
                 <div class="gal-i" data-cat="manual">
-                    <img src="images/Westlake_Multi_Panel_Patio_Shades.jpg" alt="Multi-panel patio shade system in Westlake, Texas">
-                    <div class="gal-cap">Multi-Panel System — Westlake, TX</div>
-                </div>
-                <div class="gal-i" data-cat="manual">
-                    <img src="images/Trophy_Club_Home_Exterior_Patio_Shade.jpg" alt="Full Patio Install in Trophy Club">
-                    <div class="gal-cap">Full Patio Install — Trophy Club, TX</div>
+                    <img src="images/Flower_Mound_Corner_Patio_Screens.jpg" alt="Corner patio screen installation in Flower Mound Texas">
+                    <div class="gal-cap">Corner Screens — Flower Mound, TX</div>
                 </div>
                 <div class="gal-i" data-cat="motorized">
-                    <img src="images/Fort_Worth_Garage_Screen_Closed.jpg" alt="Motorized garage screen fully closed on brick home in Fort Worth">
-                    <div class="gal-cap">Garage Screen (Closed) — Fort Worth, TX</div>
-                </div>
-                <div class="gal-i" data-cat="motorized">
-                    <img src="images/Justin_Exterior_Patio_Shade_Automated.jpg" alt="Automated Screen in Justin">
-                    <div class="gal-cap">Automated Screen — Justin, TX</div>
+                    <img src="images/Northlake_Exterior_Patio_Shade_Automated.jpg" alt="Automated exterior patio shade on modern farmhouse in Northlake Texas">
+                    <div class="gal-cap">Modern Farmhouse — Northlake, TX</div>
                 </div>
                 <div class="gal-i" data-cat="manual">
-                    <img src="images/Roanoke_Patio_Shade_Exterior_View.jpg" alt="Exterior patio shade with landscaping in Roanoke, Texas">
-                    <div class="gal-cap">Exterior View — Roanoke, TX</div>
-                </div>
-                <div class="gal-i" data-cat="motorized poolside">
-                    <img src="images/Denton_Patio_Shade_Up.jpg" alt="Retractable Screen in Denton">
-                    <div class="gal-cap">Retractable Screen (Open) — Denton, TX</div>
-                </div>
-                <div class="gal-i" data-cat="motorized">
-                    <img src="images/Colleyville_Upper_Deck_Patio_Screen.jpg" alt="Upper deck patio screen in Colleyville, Texas">
-                    <div class="gal-cap">Upper Deck Screen — Colleyville, TX</div>
-                </div>
-                <div class="gal-i" data-cat="manual">
-                    <img src="images/Southlake_Exterior_Shade_Side.jpg" alt="Side View in Southlake">
-                    <div class="gal-cap">Side View — Southlake, TX</div>
-                </div>
-                <div class="gal-i" data-cat="motorized">
-                    <img src="images/Fort_Worth_Garage_Screen_Open.jpg" alt="Motorized garage screen partially open in Fort Worth, Texas">
-                    <div class="gal-cap">Garage Screen (Open) — Fort Worth, TX</div>
-                </div>
-                <div class="gal-i" data-cat="manual">
-                    <img src="images/Colleyville_Home_Exterior_Patio_Shade.jpg" alt="Covered Patio in Colleyville">
-                    <div class="gal-cap">Covered Patio — Colleyville, TX</div>
+                    <img src="images/Grapevine_Modern_Patio_Screen_Mesh.jpg" alt="Modern mesh patio screen on home in Grapevine Texas">
+                    <div class="gal-cap">Mesh Screen — Grapevine, TX</div>
                 </div>
                 <div class="gal-i" data-cat="detail">
-                    <img src="images/Grapevine_Patio_Screen_Track_Detail.jpg" alt="Close-up of patio screen track hardware in Grapevine, Texas">
+                    <img src="images/Grapevine_Patio_Screen_Track_Detail.jpg" alt="Close-up of patio screen track hardware in Grapevine Texas">
                     <div class="gal-cap">Track Detail — Grapevine, TX</div>
                 </div>
-                <div class="gal-i" data-cat="motorized">
-                    <img src="images/Weatherford_Automated_Patio_Shade_Porch.jpg" alt="Porch Screen in Weatherford">
-                    <div class="gal-cap">Porch Screen — Weatherford, TX</div>
+                <div class="gal-i" data-cat="manual">
+                    <img src="images/Westlake_Multi_Panel_Patio_Shades.jpg" alt="Multi-panel patio shade system on home in Westlake Texas">
+                    <div class="gal-cap">Multi-Panel System — Westlake, TX</div>
                 </div>
                 <div class="gal-i" data-cat="detail">
-                    <img src="images/Westlake_Patio_Shade_Track_Close.jpg" alt="Close-up of patio shade track system in Westlake, Texas">
+                    <img src="images/Westlake_Patio_Shade_Track_Close.jpg" alt="Close-up of patio shade track system in Westlake Texas">
                     <div class="gal-cap">Track Close-Up — Westlake, TX</div>
                 </div>
-                <div class="gal-i" data-cat="detail">
-                    <img src="images/Fort_Worth_Screen_Housing_Detail.jpg" alt="Close-up of screen housing hardware on brick exterior in Fort Worth">
-                    <div class="gal-cap">Housing Detail — Fort Worth, TX</div>
+                <div class="gal-i" data-cat="manual">
+                    <img src="images/Roanoke_Home_Exterior_Patio_Shade.jpg" alt="Exterior patio shade on home in Roanoke Texas">
+                    <div class="gal-cap">Exterior View — Roanoke, TX</div>
+                </div>
+                <div class="gal-i" data-cat="manual">
+                    <img src="images/Roanoke_Patio_Shade_Exterior_View.jpg" alt="Patio shade exterior detail in Roanoke Texas">
+                    <div class="gal-cap">Patio View — Roanoke, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized poolside">
+                    <img src="images/Colleyville_Home_Exterior_Patio_Shade.jpg" alt="Exterior patio shade on covered patio in Colleyville Texas">
+                    <div class="gal-cap">Covered Patio — Colleyville, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized">
+                    <img src="images/Justin_Exterior_Patio_Shade_Automated.jpg" alt="Automated exterior patio shade on home in Justin Texas">
+                    <div class="gal-cap">Automated Screen — Justin, TX</div>
+                </div>
+                <div class="gal-i" data-cat="motorized">
+                    <img src="images/Weatherford_Automated_Patio_Shade_Porch.jpg" alt="Automated patio shade on porch in Weatherford Texas">
+                    <div class="gal-cap">Porch Screen — Weatherford, TX</div>
                 </div>
             </div>
         </div>
@@ -719,7 +895,7 @@
         window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>40)});
         const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('vis');obs.unobserve(el.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
         document.querySelectorAll('.anim').forEach(el=>obs.observe(el));
-document.querySelectorAll('.gal-fbtn').forEach(b=>{b.addEventListener('click',()=>{document.querySelectorAll('.gal-fbtn').forEach(x=>x.classList.remove('active'));b.classList.add('active');const f=b.dataset.filter;document.querySelectorAll('.gal-full .gal-i').forEach(i=>{i.style.display=(!f||i.dataset.cat.includes(f))?'':'none'})})});
+document.querySelectorAll('.gal-fbtn').forEach(b=>{b.addEventListener('click',()=>{document.querySelectorAll('.gal-fbtn').forEach(x=>x.classList.remove('active'));b.classList.add('active');const f=b.dataset.filter;document.querySelectorAll('.gal-full .gal-i').forEach(i=>{i.style.display=(!f||i.dataset.cat.includes(f))?'':'none'});document.querySelectorAll('.gal-project-label').forEach(label=>{let nextVisible=false;let sibling=label.nextElementSibling;while(sibling&&!sibling.classList.contains('gal-project-label')){if(sibling.classList.contains('gal-i')&&sibling.style.display!=='none'){nextVisible=true;break}sibling=sibling.nextElementSibling}label.style.display=nextVisible?'':'none'})})});
     </script>
 </body>
 </html>
