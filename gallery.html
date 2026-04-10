@@ -103,18 +103,12 @@
         .sec-dark .sec-hdr p{color:rgba(255,255,255,0.6)}
 
         /* GALLERY SPECIFIC */
-        .gal-filters{display:flex;justify-content:center;gap:8px;margin-bottom:36px;flex-wrap:wrap}
-        .gal-fbtn{padding:8px 20px;border-radius:100px;font-size:.85rem;font-weight:600;color:var(--navy);background:var(--white);border:1px solid rgba(0,0,0,0.1);cursor:pointer;transition:all .2s}
-        .gal-fbtn:hover,.gal-fbtn.active{background:var(--orange);color:var(--white);border-color:var(--orange)}
         .gal-full{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
         .gal-full .gal-i{aspect-ratio:16/11;border-radius:var(--radius-lg);overflow:hidden;position:relative;cursor:pointer}
         .gal-full .gal-i img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
         .gal-full .gal-i:hover img{transform:scale(1.05)}
         .gal-full .gal-i .gal-cap{position:absolute;bottom:0;left:0;right:0;padding:14px 18px;background:linear-gradient(transparent,rgba(0,0,0,0.6));color:var(--white);font-size:.82rem;font-weight:600;opacity:0;transition:opacity .3s}
         .gal-full .gal-i:hover .gal-cap{opacity:1}
-        .gal-project{margin-bottom:32px}
-        .gal-project-label{grid-column:1/-1;font-size:.95rem;font-weight:700;color:var(--navy);padding:8px 0 4px;border-bottom:2px solid var(--orange);margin-bottom:8px;display:flex;align-items:center;gap:8px}
-        .gal-project-label .gal-loc{font-weight:400;color:var(--warm-gray);font-size:.85rem}
         @media(max-width:768px){.gal-full{grid-template-columns:1fr 1fr}}
         @media(max-width:480px){.gal-full{grid-template-columns:1fr}}
 
@@ -471,17 +465,8 @@
     <!-- GALLERY SECTION -->
     <section class="sec">
         <div class="container">
-            <div class="gal-filters">
-                <button class="gal-fbtn active" data-filter="">All</button>
-                <button class="gal-fbtn" data-filter="motorized">Motorized</button>
-                <button class="gal-fbtn" data-filter="manual">Manual</button>
-                <button class="gal-fbtn" data-filter="poolside">Poolside</button>
-                <button class="gal-fbtn" data-filter="detail">Detail</button>
-            </div>
-
             <div class="gal-full">
-                <!-- Project: Luxury Poolside Install -->
-                <div class="gal-project-label">Luxury Poolside Install <span class="gal-loc">— Southlake, TX</span></div>
+                <!-- Southlake -->
                 <div class="gal-i" data-cat="motorized poolside">
                     <img src="images/Southlake_Luxury_Patio_Before.jpg" alt="Luxury patio with pool view before shade installation in Southlake Texas">
                     <div class="gal-cap">Before — Southlake, TX</div>
@@ -495,8 +480,7 @@
                     <div class="gal-cap">Shade Fully Deployed — Southlake, TX</div>
                 </div>
 
-                <!-- Project: Modern Farmhouse Poolside -->
-                <div class="gal-project-label">Modern Farmhouse Poolside <span class="gal-loc">— Westlake, TX</span></div>
+                <!-- Westlake -->
                 <div class="gal-i" data-cat="motorized poolside">
                     <img src="images/Westlake_Poolside_Patio_Before.jpg" alt="Modern farmhouse poolside patio before shade installation in Westlake Texas">
                     <div class="gal-cap">Before — Westlake, TX</div>
@@ -514,8 +498,7 @@
                     <div class="gal-cap">Housing Detail — Westlake, TX</div>
                 </div>
 
-                <!-- Project: Mediterranean Estate -->
-                <div class="gal-project-label">Mediterranean Estate <span class="gal-loc">— Colleyville, TX</span></div>
+                <!-- Colleyville Mediterranean -->
                 <div class="gal-i" data-cat="motorized poolside">
                     <img src="images/Colleyville_Mediterranean_Patio_Before.jpg" alt="Mediterranean style patio before shade installation in Colleyville Texas">
                     <div class="gal-cap">Before — Colleyville, TX</div>
@@ -533,8 +516,7 @@
                     <div class="gal-cap">Side View — Colleyville, TX</div>
                 </div>
 
-                <!-- Project: Stone Arched Poolside -->
-                <div class="gal-project-label">Stone Arched Poolside <span class="gal-loc">— Flower Mound, TX</span></div>
+                <!-- Flower Mound -->
                 <div class="gal-i" data-cat="motorized poolside">
                     <img src="images/Flower_Mound_Exterior_Shade_Close.jpg" alt="Close view of arched patio shades by pool in Flower Mound Texas">
                     <div class="gal-cap">Close View — Flower Mound, TX</div>
@@ -556,8 +538,7 @@
                     <div class="gal-cap">Grill Area — Flower Mound, TX</div>
                 </div>
 
-                <!-- Project: Hill Country Modern -->
-                <div class="gal-project-label">Hill Country Modern <span class="gal-loc">— Fort Worth, TX</span></div>
+                <!-- Fort Worth -->
                 <div class="gal-i" data-cat="motorized poolside">
                     <img src="images/Fort_Worth_Motorized_Patio_Shade.jpg" alt="Motorized patio shade on stone modern home with pool in Fort Worth Texas">
                     <div class="gal-cap">Evening View — Fort Worth, TX</div>
@@ -567,8 +548,7 @@
                     <div class="gal-cap">Fire Pit View — Fort Worth, TX</div>
                 </div>
 
-                <!-- Project: Modern Farmhouse Patio -->
-                <div class="gal-project-label">Modern Farmhouse Patio <span class="gal-loc">— Argyle, TX</span></div>
+                <!-- Argyle -->
                 <div class="gal-i" data-cat="motorized">
                     <img src="images/Argyle_Covered_Patio_Before.jpg" alt="Covered patio before shade installation on modern farmhouse in Argyle Texas">
                     <div class="gal-cap">Before — Argyle, TX</div>
@@ -582,8 +562,7 @@
                     <div class="gal-cap">Side View — Argyle, TX</div>
                 </div>
 
-                <!-- Project: Poolside Brick Home -->
-                <div class="gal-project-label">Poolside Brick Home <span class="gal-loc">— Benbrook, TX</span></div>
+                <!-- Benbrook -->
                 <div class="gal-i" data-cat="motorized poolside">
                     <img src="images/Benbrook_Poolside_Patio_Before.jpg" alt="Brick home poolside patio before shade installation in Benbrook Texas">
                     <div class="gal-cap">Before — Benbrook, TX</div>
@@ -601,8 +580,7 @@
                     <div class="gal-cap">Housing Detail — Benbrook, TX</div>
                 </div>
 
-                <!-- Project: Pergola and Outdoor Living -->
-                <div class="gal-project-label">Pergola and Outdoor Living <span class="gal-loc">— Trophy Club, TX</span></div>
+                <!-- Trophy Club -->
                 <div class="gal-i" data-cat="motorized poolside">
                     <img src="images/Trophy_Club_Pergola_Patio_Before.jpg" alt="Pergola patio before shade installation in Trophy Club Texas">
                     <div class="gal-cap">Before — Trophy Club, TX</div>
@@ -612,8 +590,7 @@
                     <div class="gal-cap">Shade Deployed — Trophy Club, TX</div>
                 </div>
 
-                <!-- Project: Two-Story Upper Deck -->
-                <div class="gal-project-label">Two-Story Upper Deck <span class="gal-loc">— Colleyville, TX</span></div>
+                <!-- Colleyville Two-Story -->
                 <div class="gal-i" data-cat="motorized">
                     <img src="images/Colleyville_Two_Story_Patio_Shades_Retracted.jpg" alt="Two-story patio shades retracted on upper deck in Colleyville Texas">
                     <div class="gal-cap">Shades Retracted — Colleyville, TX</div>
@@ -623,8 +600,7 @@
                     <div class="gal-cap">Upper Deck Screen — Colleyville, TX</div>
                 </div>
 
-                <!-- Project: Brick Covered Patio -->
-                <div class="gal-project-label">Brick Covered Patio <span class="gal-loc">— Keller, TX</span></div>
+                <!-- Keller -->
                 <div class="gal-i" data-cat="motorized">
                     <img src="images/Keller_Covered_Patio_Before.jpg" alt="Covered patio before shade installation on brick home in Keller Texas">
                     <div class="gal-cap">Before — Keller, TX</div>
@@ -638,8 +614,7 @@
                     <div class="gal-cap">Corner View — Keller, TX</div>
                 </div>
 
-                <!-- Project: Automated Porch Screen -->
-                <div class="gal-project-label">Automated Porch Screen <span class="gal-loc">— Denton, TX</span></div>
+                <!-- Denton -->
                 <div class="gal-i" data-cat="motorized">
                     <img src="images/Denton_Automated_Patio_Shade_Porch.jpg" alt="Automated patio shade on porch in Denton Texas">
                     <div class="gal-cap">Automated Porch Screen — Denton, TX</div>
@@ -649,8 +624,7 @@
                     <div class="gal-cap">Close View — Denton, TX</div>
                 </div>
 
-                <!-- Project: Outdoor Kitchen Patio -->
-                <div class="gal-project-label">Outdoor Kitchen Patio <span class="gal-loc">— Stephenville, TX</span></div>
+                <!-- Stephenville -->
                 <div class="gal-i" data-cat="motorized">
                     <img src="images/Stephenville_Outdoor_Kitchen_Patio_Before.jpg" alt="Outdoor kitchen patio before shade installation in Stephenville Texas">
                     <div class="gal-cap">Before — Stephenville, TX</div>
@@ -664,8 +638,7 @@
                     <div class="gal-cap">Shade Deployed Close — Stephenville, TX</div>
                 </div>
 
-                <!-- Project: Garage Screen -->
-                <div class="gal-project-label">Garage Screen <span class="gal-loc">— Fort Worth, TX</span></div>
+                <!-- Fort Worth Garage -->
                 <div class="gal-i" data-cat="motorized">
                     <img src="images/Fort_Worth_Garage_Screen_Open.jpg" alt="Motorized garage screen partially open in Fort Worth Texas">
                     <div class="gal-cap">Garage Screen (Open) — Fort Worth, TX</div>
@@ -862,7 +835,7 @@
 <div class="footer-grid">
 <div class="footer-col"><h4>Products</h4><a href="/exterior-patio-shades">Exterior Patio Shades</a><a href="/automated-patio-shades">Automated Shades &amp; Screens</a><a href="/cable-guided-screens">Cable-Guided Screens</a><a href="/gallery">Project Gallery</a><a href="/contact#estimate">Free Estimate</a></div>
 <div class="footer-col"><h4>Company</h4><a href="/">Home</a><a href="/about">About Us</a><a href="/blog">Blog</a><a href="/faq">FAQs</a><a href="/contact">Contact Us</a></div>
-<div class="footer-col"><h4>Areas We Serve</h4><div class="footer-cities-grid"><a href="/fort-worth">Fort Worth</a><a href="/southlake">Southlake</a><a href="/westlake">Westlake</a><a href="/keller">Keller</a><a href="/colleyville">Colleyville</a><a href="/trophy-club">Trophy Club</a><a href="/denton">Denton</a><a href="/flower-mound">Flower Mound</a><a href="/argyle">Argyle</a><a href="/roanoke">Roanoke</a><a href="/justin">Justin</a><a href="/northlake">Northlake</a><a href="/weatherford">Weatherford</a><a href="/granbury">Granbury</a><a href="/contact">Arlington</a><a href="/grapevine">Grapevine</a><a href="/contact">Hurst</a><a href="/contact">Euless</a><a href="/contact">Bedford</a><a href="/contact">Burleson</a><a href="/contact">Cleburne</a><a href="/contact">Azle</a><a href="/contact">Aledo</a><a href="/contact">Benbrook</a><a href="/contact">Saginaw</a><a href="/contact">Decatur</a><a href="/contact">Willow Park</a></div></div>
+<div class="footer-col"><h4>Areas We Serve</h4><div class="footer-cities-grid"><a href="/fort-worth">Fort Worth</a><a href="/southlake">Southlake</a><a href="/westlake">Westlake</a><a href="/keller">Keller</a><a href="/colleyville">Colleyville</a><a href="/trophy-club">Trophy Club</a><a href="/denton">Denton</a><a href="/flower-mound">Flower Mound</a><a href="/argyle">Argyle</a><a href="/roanoke">Roanoke</a><a href="/justin">Justin</a><a href="/northlake">Northlake</a><a href="/weatherford">Weatherford</a><a href="/granbury">Granbury</a><a href="/contact">Arlington</a><a href="/grapevine">Grapevine</a><a href="/contact">Hurst</a><a href="/contact">Euless</a><a href="/contact">Bedford</a><a href="/contact">Burleson</a><a href="/contact">Cleburne</a><a href="/contact">Azle</a><a href="/contact">Aledo</a><a href="/benbrook">Benbrook</a><a href="/stephenville">Stephenville</a><a href="/contact">Saginaw</a><a href="/contact">Decatur</a><a href="/contact">Willow Park</a></div></div>
 </div>
 </div>
 </div>
@@ -879,7 +852,6 @@
         window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>40)});
         const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('vis');obs.unobserve(el.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
         document.querySelectorAll('.anim').forEach(el=>obs.observe(el));
-document.querySelectorAll('.gal-fbtn').forEach(b=>{b.addEventListener('click',()=>{document.querySelectorAll('.gal-fbtn').forEach(x=>x.classList.remove('active'));b.classList.add('active');const f=b.dataset.filter;document.querySelectorAll('.gal-full .gal-i').forEach(i=>{i.style.display=(!f||i.dataset.cat.includes(f))?'':'none'});document.querySelectorAll('.gal-project-label').forEach(label=>{let nextVisible=false;let sibling=label.nextElementSibling;while(sibling&&!sibling.classList.contains('gal-project-label')){if(sibling.classList.contains('gal-i')&&sibling.style.display!=='none'){nextVisible=true;break}sibling=sibling.nextElementSibling}label.style.display=nextVisible?'':'none'})})});
     </script>
 </body>
 </html>
