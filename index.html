@@ -171,8 +171,8 @@ button{font-family:var(--font);cursor:pointer;border:none}
 
 /* PRODUCTS */
 .prod-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:880px;margin:0 auto}
-.prod-card{border-radius:var(--radius-lg);overflow:hidden;background:var(--light-blue);border:none;transition:all .35s var(--ease)}
-.prod-card:hover{transform:translateY(-5px);box-shadow:0 12px 36px rgba(0,0,0,.20)}
+.prod-card{border-radius:var(--radius-lg);overflow:hidden;background:var(--white);border:1px solid rgba(0,0,0,.05);box-shadow:var(--shadow-sm);transition:all .35s var(--ease)}
+.prod-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:rgba(0,0,0,.08)}
 .prod-card-img{aspect-ratio:16/9;overflow:hidden}
 .prod-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
 .prod-card:hover .prod-card-img img{transform:scale(1.05)}
@@ -180,7 +180,7 @@ button{font-family:var(--font);cursor:pointer;border:none}
 .prod-card h3{font-size:1.25rem;font-weight:800;margin-bottom:8px;color:var(--navy-deep)}
 .prod-card p{color:var(--navy);font-size:.92rem;line-height:1.65;font-weight:300}
 .prod-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
-.prod-tag{padding:4px 13px;border-radius:100px;background:var(--white);color:var(--orange-deep);font-size:.75rem;font-weight:700}
+.prod-tag{padding:4px 13px;border-radius:100px;background:rgba(248,136,0,0.10);color:var(--orange-deep);font-size:.75rem;font-weight:700}
 .prod-link{display:inline-flex;align-items:center;gap:6px;color:var(--orange);font-weight:700;font-size:.88rem;margin-top:18px;transition:gap .2s}
 .prod-link:hover{gap:10px}
 .prod-link svg{width:15px;height:15px}
@@ -696,7 +696,7 @@ button{font-family:var(--font);cursor:pointer;border:none}
 </section>
 
 <!-- PRODUCTS -->
-<section class="sec sec-dark" id="products">
+<section class="sec sec-cream" id="products">
 <div class="container">
 <div class="sec-hdr anim"><div class="sec-ey">Our Products</div><h2>Custom Solutions for Every Patio</h2><p>From manual drop shades to fully motorized smart screens — we match the right product to your space.</p></div>
 <div class="prod-grid">
