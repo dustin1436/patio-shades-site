@@ -1,0 +1,31 @@
+name: Verify image standards
+
+# Runs the JAW Co image optimizer's verify command on every push and PR.
+# Fails the build if Items 13-14 of the Definition of Done aren't met.
+#
+# Requires `.github/scripts/jaw_image_optimizer.py` to be present in the repo.
+# Both files (this workflow + the script) get installed together by the
+# install-ci.sh script.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify-images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Pillow
+        run: pip install --quiet "Pillow>=10.0"
+
+      - name: Run verify
+        run: python3 .github/scripts/jaw_image_optimizer.py verify "$GITHUB_WORKSPACE"
