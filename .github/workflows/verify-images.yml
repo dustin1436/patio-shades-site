@@ -1,11 +1,12 @@
 name: Verify image standards
 
-# Runs the JAW Co image optimizer's verify command on every push and PR.
-# Fails the build if Items 13-14 of the Definition of Done aren't met.
+# Self-healing: on push to main, auto-runs optimize + picture-swap, commits
+# any fixes back, then verifies. On PRs, verify-only (no auto-push).
 #
-# Requires `.github/scripts/jaw_image_optimizer.py` to be present in the repo.
-# Both files (this workflow + the script) get installed together by the
-# install-ci.sh script.
+# Why this is safe from infinite loops:
+# - Commits made by GITHUB_TOKEN don't trigger workflow runs by default.
+# - The auto-fix script is idempotent — re-running on already-clean code
+#   produces zero changes, so the commit step skips when nothing changed.
 
 on:
   push:
@@ -13,11 +14,16 @@ on:
   pull_request:
     branches: [main]
 
+permissions:
+  contents: write
+
 jobs:
   verify-images:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -27,5 +33,24 @@ jobs:
       - name: Install Pillow
         run: pip install --quiet "Pillow>=10.0"
 
-      - name: Run verify
+      - name: Auto-fix (push to main only)
+        if: github.event_name == 'push'
+        run: |
+          python3 .github/scripts/jaw_image_optimizer.py optimize "$GITHUB_WORKSPACE" --apply --add-lazy-load
+          python3 .github/scripts/jaw_image_optimizer.py picture-swap "$GITHUB_WORKSPACE" --apply
+
+      - name: Commit fixes if any
+        if: github.event_name == 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "chore(ci): JAW Co image optimization (auto)"
+            git push
+          else
+            echo "No image fixes needed — already compliant."
+          fi
+
+      - name: Verify
         run: python3 .github/scripts/jaw_image_optimizer.py verify "$GITHUB_WORKSPACE"
