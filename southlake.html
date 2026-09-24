@@ -36,9 +36,9 @@ document.readyState==='complete'?w():window.addEventListener('load',w);})();
 <meta name="geo.region" content="US-TX">
 <meta name="geo.placename" content="Southlake, Texas">
 <meta name="robots" content="index, follow">
+<link rel="preload" as="style" href="https://fonts.cdnfonts.com/css/avenir"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/avenir" media="print" onload="this.media='all';this.onload=null"><noscript><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/avenir"></noscript>
 <style>
 
-@import url('https://fonts.cdnfonts.com/css/avenir');
 :root {
   --navy: #3A4D5C;
   --navy-deep: #1E2D3A;
@@ -73,7 +73,7 @@ a{color:inherit;text-decoration:none}
 button{font-family:var(--font);cursor:pointer;border:none}
 .container{max-width:var(--max-w);margin:0 auto;padding:0 28px}
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
-@keyframes scaleIn{from{opacity:0;transform:scale(0.93)}to{opacity:1;transform:scale(1)}}
+@keyframes scaleIn{from{opacity:.02;transform:scale(0.93)}to{opacity:1;transform:scale(1)}}
 .anim{opacity:0}.anim.vis{animation:fadeUp .7s var(--ease) forwards}
 .d1{animation-delay:.1s!important}.d2{animation-delay:.2s!important}.d3{animation-delay:.3s!important}.d4{animation-delay:.4s!important}
 .nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:var(--nav-h);background:rgba(255,255,255,0.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(0,0,0,0.05);transition:all .3s var(--ease)}

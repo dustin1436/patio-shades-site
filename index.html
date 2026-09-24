@@ -17,6 +17,7 @@ document.readyState==='complete'?w():window.addEventListener('load',w);})();
 </script>
 <script src="/jaw-events.js" defer></script>
 <meta charset="UTF-8">
+<link rel="preload" as="image" href="Colleyville_Home_Exterior_Patio_Shade-800.webp" imagesrcset="Colleyville_Home_Exterior_Patio_Shade-800.webp 800w, Colleyville_Home_Exterior_Patio_Shade.webp 1600w" imagesizes="(max-width: 900px) 92vw, 540px" type="image/webp" fetchpriority="high">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,8 +37,8 @@ document.readyState==='complete'?w():window.addEventListener('load',w);})();
 <meta name="geo.region" content="US-TX">
 <meta name="geo.placename" content="Fort Worth, Texas">
 <meta name="robots" content="index, follow">
+<link rel="preload" as="style" href="https://fonts.cdnfonts.com/css/avenir"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/avenir" media="print" onload="this.media='all';this.onload=null"><noscript><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/avenir"></noscript>
 <style>
-@import url('https://fonts.cdnfonts.com/css/avenir');
 :root {
   --navy: #3A4D5C;
   --navy-deep: #1E2D3A;
@@ -72,7 +73,7 @@ a{color:inherit;text-decoration:none}
 button{font-family:var(--font);cursor:pointer;border:none}
 .container{max-width:var(--max-w);margin:0 auto;padding:0 28px}
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
-@keyframes scaleIn{from{opacity:0;transform:scale(0.93)}to{opacity:1;transform:scale(1)}}
+@keyframes scaleIn{from{opacity:.02;transform:scale(0.93)}to{opacity:1;transform:scale(1)}}
 .anim{opacity:0}.anim.vis{animation:fadeUp .7s var(--ease) forwards}
 .d1{animation-delay:.1s!important}.d2{animation-delay:.2s!important}.d3{animation-delay:.3s!important}.d4{animation-delay:.4s!important}
 
@@ -351,6 +352,7 @@ button{font-family:var(--font);cursor:pointer;border:none}
   .form-card { padding: 24px 18px; }
   .form-card h3 { font-size: 1.2rem; }
   .sec { overflow: visible; }
+  .cta-sec { overflow-x: clip; } /* keep its decorative ::before glow from widening the page on phones */
 }
 </style>
 
@@ -638,7 +640,7 @@ button{font-family:var(--font);cursor:pointer;border:none}
 
 <!-- HERO -->
 <section class="hero">
-<div class="hero-bg"><picture><source srcset="hero-bg.webp" type="image/webp"><img src="hero-bg.jpg" alt="Motorized exterior patio shades installed on a DFW home" loading="lazy"></picture></div>
+<div class="hero-bg"><picture><source srcset="hero-bg-960.webp 960w, hero-bg.webp 1920w" sizes="100vw" type="image/webp"><img src="hero-bg.jpg" alt="Motorized exterior patio shades installed on a DFW home" loading="lazy"></picture></div>
 <div class="hero-ov"></div>
 <div class="hero-content">
 <div>
@@ -656,9 +658,9 @@ button{font-family:var(--font);cursor:pointer;border:none}
 </div>
 </div>
 <div class="hero-mosaic">
-<div class="hero-mi lg"><picture><source srcset="Colleyville_Home_Exterior_Patio_Shade.webp" type="image/webp"><img src="Colleyville_Home_Exterior_Patio_Shade.jpg" alt="Colleyville home with motorized exterior patio shade installed across the back patio" loading="lazy"></picture><div class="tag">Colleyville, TX</div></div>
-<div class="hero-mi sm"><picture><source srcset="Trophy_Club_Pergola_Patio_Shade_Deployed.webp" type="image/webp"><img src="Trophy_Club_Pergola_Patio_Shade_Deployed.jpg" alt="Trophy Club pergola enclosed with motorized patio shades deployed" loading="lazy"></picture><div class="tag">Trophy Club, TX</div></div>
-<div class="hero-mi sm"><picture><source srcset="Flower_Mound_Exterior_Shade_Close.webp" type="image/webp"><img src="Flower_Mound_Exterior_Shade_Close.jpg" alt="Flower Mound arched stone patio with motorized exterior screens deployed, viewed from across the pool" loading="lazy"></picture><div class="tag">Flower Mound, TX</div></div>
+<div class="hero-mi lg"><picture><source srcset="Colleyville_Home_Exterior_Patio_Shade-800.webp 800w, Colleyville_Home_Exterior_Patio_Shade.webp 1600w" sizes="(max-width: 900px) 92vw, 540px" type="image/webp"><img src="Colleyville_Home_Exterior_Patio_Shade.jpg" alt="Colleyville home with motorized exterior patio shade installed across the back patio" fetchpriority="high" decoding="async"></picture><div class="tag">Colleyville, TX</div></div>
+<div class="hero-mi sm"><picture><source srcset="Trophy_Club_Pergola_Patio_Shade_Deployed-560.webp 560w, Trophy_Club_Pergola_Patio_Shade_Deployed.webp 1920w" sizes="(max-width: 900px) 46vw, 270px" type="image/webp"><img src="Trophy_Club_Pergola_Patio_Shade_Deployed.jpg" alt="Trophy Club pergola enclosed with motorized patio shades deployed" loading="lazy"></picture><div class="tag">Trophy Club, TX</div></div>
+<div class="hero-mi sm"><picture><source srcset="Flower_Mound_Exterior_Shade_Close-560.webp 560w, Flower_Mound_Exterior_Shade_Close.webp 1600w" sizes="(max-width: 900px) 46vw, 270px" type="image/webp"><img src="Flower_Mound_Exterior_Shade_Close.jpg" alt="Flower Mound arched stone patio with motorized exterior screens deployed, viewed from across the pool" loading="lazy"></picture><div class="tag">Flower Mound, TX</div></div>
 </div>
 </div>
 </section>
@@ -691,8 +693,8 @@ button{font-family:var(--font);cursor:pointer;border:none}
 <div class="container">
 <div class="ba-wrap">
 <div class="ba-imgs anim">
-<div class="ba-iw"><img src="images/Southlake_Luxury_Patio_Before.jpg" alt="Luxury patio with pool view before motorized shade installation in Southlake, Texas" loading="lazy"><div class="ba-tag bf">Before</div></div>
-<div class="ba-iw"><img src="images/Southlake_Motorized_Patio_Shade_Partial.jpg" alt="Motorized patio shade partially deployed on luxury poolside patio in Southlake, Texas" loading="lazy"><div class="ba-tag af">After</div></div>
+<div class="ba-iw"><picture><source srcset="Southlake_Luxury_Patio_Before-800.webp 800w, Southlake_Luxury_Patio_Before.webp 1600w" sizes="(max-width: 900px) 46vw, 400px" type="image/webp"><img src="images/Southlake_Luxury_Patio_Before.jpg" alt="Luxury patio with pool view before motorized shade installation in Southlake, Texas" loading="lazy"></picture><div class="ba-tag bf">Before</div></div>
+<div class="ba-iw"><picture><source srcset="Southlake_Motorized_Patio_Shade_Partial-800.webp 800w, Southlake_Motorized_Patio_Shade_Partial.webp 1600w" sizes="(max-width: 900px) 46vw, 400px" type="image/webp"><img src="images/Southlake_Motorized_Patio_Shade_Partial.jpg" alt="Motorized patio shade partially deployed on luxury poolside patio in Southlake, Texas" loading="lazy"></picture><div class="ba-tag af">After</div></div>
 </div>
 <div class="ba-text anim">
 <div class="sec-ey">The Difference</div>
