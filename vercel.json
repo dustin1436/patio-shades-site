@@ -25,17 +25,17 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "destination": "https://www.loveisblindstx.com/",
       "statusCode": 301
     },
     {
       "source": "/index",
-      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "destination": "https://www.loveisblindstx.com/",
       "statusCode": 301
     },
     {
       "source": "/index.html",
-      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "destination": "https://www.loveisblindstx.com/",
       "statusCode": 301
     },
     {
