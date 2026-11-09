@@ -1,10 +1,2212 @@
 {
-  "cleanUrls": true,
+  "cleanUrls": false,
   "rewrites": [
-    { "source": "/faqs", "destination": "/faq.html" },
-    { "source": "/images/:path*", "destination": "/:path*" },
-    { "source": "/products/:path*", "destination": "/:path*" },
-    { "source": "/blog/:path*", "destination": "/:path*" },
-    { "source": "/cities/:path*", "destination": "/:path*" }
+    {
+      "source": "/faqs",
+      "destination": "/faq.html"
+    },
+    {
+      "source": "/images/:path*",
+      "destination": "/:path*"
+    },
+    {
+      "source": "/products/:path*",
+      "destination": "/:path*"
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "/:path*"
+    },
+    {
+      "source": "/cities/:path*",
+      "destination": "/:path*"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://www.loveisblindstx.com/",
+      "statusCode": 301
+    },
+    {
+      "source": "/index",
+      "destination": "https://www.loveisblindstx.com/",
+      "statusCode": 301
+    },
+    {
+      "source": "/index.html",
+      "destination": "https://www.loveisblindstx.com/",
+      "statusCode": 301
+    },
+    {
+      "source": "/about",
+      "destination": "https://www.loveisblindstx.com/about",
+      "statusCode": 301
+    },
+    {
+      "source": "/about.html",
+      "destination": "https://www.loveisblindstx.com/about",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/about",
+      "destination": "https://www.loveisblindstx.com/about",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/about.html",
+      "destination": "https://www.loveisblindstx.com/about",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/about",
+      "destination": "https://www.loveisblindstx.com/about",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/about.html",
+      "destination": "https://www.loveisblindstx.com/about",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/about",
+      "destination": "https://www.loveisblindstx.com/about",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/about.html",
+      "destination": "https://www.loveisblindstx.com/about",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact",
+      "destination": "https://www.loveisblindstx.com/schedule-now",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact.html",
+      "destination": "https://www.loveisblindstx.com/schedule-now",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/contact",
+      "destination": "https://www.loveisblindstx.com/schedule-now",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/contact.html",
+      "destination": "https://www.loveisblindstx.com/schedule-now",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/contact",
+      "destination": "https://www.loveisblindstx.com/schedule-now",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/contact.html",
+      "destination": "https://www.loveisblindstx.com/schedule-now",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/contact",
+      "destination": "https://www.loveisblindstx.com/schedule-now",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/contact.html",
+      "destination": "https://www.loveisblindstx.com/schedule-now",
+      "statusCode": 301
+    },
+    {
+      "source": "/gallery",
+      "destination": "https://www.loveisblindstx.com/gallery",
+      "statusCode": 301
+    },
+    {
+      "source": "/gallery.html",
+      "destination": "https://www.loveisblindstx.com/gallery",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/gallery",
+      "destination": "https://www.loveisblindstx.com/gallery",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/gallery.html",
+      "destination": "https://www.loveisblindstx.com/gallery",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/gallery",
+      "destination": "https://www.loveisblindstx.com/gallery",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/gallery.html",
+      "destination": "https://www.loveisblindstx.com/gallery",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/gallery",
+      "destination": "https://www.loveisblindstx.com/gallery",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/gallery.html",
+      "destination": "https://www.loveisblindstx.com/gallery",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog",
+      "destination": "https://www.loveisblindstx.com/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog.html",
+      "destination": "https://www.loveisblindstx.com/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/blog",
+      "destination": "https://www.loveisblindstx.com/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/blog.html",
+      "destination": "https://www.loveisblindstx.com/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/blog",
+      "destination": "https://www.loveisblindstx.com/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/blog.html",
+      "destination": "https://www.loveisblindstx.com/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/blog",
+      "destination": "https://www.loveisblindstx.com/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/blog.html",
+      "destination": "https://www.loveisblindstx.com/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/faq",
+      "destination": "https://www.loveisblindstx.com/faqs",
+      "statusCode": 301
+    },
+    {
+      "source": "/faq.html",
+      "destination": "https://www.loveisblindstx.com/faqs",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/faq",
+      "destination": "https://www.loveisblindstx.com/faqs",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/faq.html",
+      "destination": "https://www.loveisblindstx.com/faqs",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/faq",
+      "destination": "https://www.loveisblindstx.com/faqs",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/faq.html",
+      "destination": "https://www.loveisblindstx.com/faqs",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/faq",
+      "destination": "https://www.loveisblindstx.com/faqs",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/faq.html",
+      "destination": "https://www.loveisblindstx.com/faqs",
+      "statusCode": 301
+    },
+    {
+      "source": "/thank-you",
+      "destination": "https://www.loveisblindstx.com/schedule-now",
+      "statusCode": 301
+    },
+    {
+      "source": "/thank-you.html",
+      "destination": "https://www.loveisblindstx.com/schedule-now",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/thank-you",
+      "destination": "https://www.loveisblindstx.com/schedule-now",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/thank-you.html",
+      "destination": "https://www.loveisblindstx.com/schedule-now",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/thank-you",
+      "destination": "https://www.loveisblindstx.com/schedule-now",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/thank-you.html",
+      "destination": "https://www.loveisblindstx.com/schedule-now",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/thank-you",
+      "destination": "https://www.loveisblindstx.com/schedule-now",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/thank-you.html",
+      "destination": "https://www.loveisblindstx.com/schedule-now",
+      "statusCode": 301
+    },
+    {
+      "source": "/exterior-patio-shades",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/exterior-patio-shades.html",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/exterior-patio-shades",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/exterior-patio-shades.html",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/exterior-patio-shades",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/exterior-patio-shades.html",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/exterior-patio-shades",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/exterior-patio-shades.html",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/automated-patio-shades",
+      "destination": "https://www.loveisblindstx.com/motorized-patio-shades-for-texas-patios",
+      "statusCode": 301
+    },
+    {
+      "source": "/automated-patio-shades.html",
+      "destination": "https://www.loveisblindstx.com/motorized-patio-shades-for-texas-patios",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/automated-patio-shades",
+      "destination": "https://www.loveisblindstx.com/motorized-patio-shades-for-texas-patios",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/automated-patio-shades.html",
+      "destination": "https://www.loveisblindstx.com/motorized-patio-shades-for-texas-patios",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/automated-patio-shades",
+      "destination": "https://www.loveisblindstx.com/motorized-patio-shades-for-texas-patios",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/automated-patio-shades.html",
+      "destination": "https://www.loveisblindstx.com/motorized-patio-shades-for-texas-patios",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/automated-patio-shades",
+      "destination": "https://www.loveisblindstx.com/motorized-patio-shades-for-texas-patios",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/automated-patio-shades.html",
+      "destination": "https://www.loveisblindstx.com/motorized-patio-shades-for-texas-patios",
+      "statusCode": 301
+    },
+    {
+      "source": "/cable-guided-screens",
+      "destination": "https://www.loveisblindstx.com/outdoor-roller-shades-vs-patio-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/cable-guided-screens.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-roller-shades-vs-patio-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/cable-guided-screens",
+      "destination": "https://www.loveisblindstx.com/outdoor-roller-shades-vs-patio-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/cable-guided-screens.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-roller-shades-vs-patio-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/cable-guided-screens",
+      "destination": "https://www.loveisblindstx.com/outdoor-roller-shades-vs-patio-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/cable-guided-screens.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-roller-shades-vs-patio-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/cable-guided-screens",
+      "destination": "https://www.loveisblindstx.com/outdoor-roller-shades-vs-patio-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/cable-guided-screens.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-roller-shades-vs-patio-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/cable-guided-vs-track-guided",
+      "destination": "https://www.loveisblindstx.com/outdoor-roller-shades-vs-patio-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/cable-guided-vs-track-guided.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-roller-shades-vs-patio-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/cable-guided-vs-track-guided",
+      "destination": "https://www.loveisblindstx.com/outdoor-roller-shades-vs-patio-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/cable-guided-vs-track-guided.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-roller-shades-vs-patio-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/cable-guided-vs-track-guided",
+      "destination": "https://www.loveisblindstx.com/outdoor-roller-shades-vs-patio-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/cable-guided-vs-track-guided.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-roller-shades-vs-patio-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/cable-guided-vs-track-guided",
+      "destination": "https://www.loveisblindstx.com/outdoor-roller-shades-vs-patio-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/cable-guided-vs-track-guided.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-roller-shades-vs-patio-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/smart-home-patio-screens",
+      "destination": "https://www.loveisblindstx.com/motorized-roller-shades-smart-home-integration-solutions",
+      "statusCode": 301
+    },
+    {
+      "source": "/smart-home-patio-screens.html",
+      "destination": "https://www.loveisblindstx.com/motorized-roller-shades-smart-home-integration-solutions",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/smart-home-patio-screens",
+      "destination": "https://www.loveisblindstx.com/motorized-roller-shades-smart-home-integration-solutions",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/smart-home-patio-screens.html",
+      "destination": "https://www.loveisblindstx.com/motorized-roller-shades-smart-home-integration-solutions",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/smart-home-patio-screens",
+      "destination": "https://www.loveisblindstx.com/motorized-roller-shades-smart-home-integration-solutions",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/smart-home-patio-screens.html",
+      "destination": "https://www.loveisblindstx.com/motorized-roller-shades-smart-home-integration-solutions",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/smart-home-patio-screens",
+      "destination": "https://www.loveisblindstx.com/motorized-roller-shades-smart-home-integration-solutions",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/smart-home-patio-screens.html",
+      "destination": "https://www.loveisblindstx.com/motorized-roller-shades-smart-home-integration-solutions",
+      "statusCode": 301
+    },
+    {
+      "source": "/bug-proof-your-patio",
+      "destination": "https://www.loveisblindstx.com/screened-porch-vs-motorized-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/bug-proof-your-patio.html",
+      "destination": "https://www.loveisblindstx.com/screened-porch-vs-motorized-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/bug-proof-your-patio",
+      "destination": "https://www.loveisblindstx.com/screened-porch-vs-motorized-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/bug-proof-your-patio.html",
+      "destination": "https://www.loveisblindstx.com/screened-porch-vs-motorized-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/bug-proof-your-patio",
+      "destination": "https://www.loveisblindstx.com/screened-porch-vs-motorized-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/bug-proof-your-patio.html",
+      "destination": "https://www.loveisblindstx.com/screened-porch-vs-motorized-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/bug-proof-your-patio",
+      "destination": "https://www.loveisblindstx.com/screened-porch-vs-motorized-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/bug-proof-your-patio.html",
+      "destination": "https://www.loveisblindstx.com/screened-porch-vs-motorized-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/custom-vs-off-the-shelf-patio-screens",
+      "destination": "https://www.loveisblindstx.com/patio-shade-cost-what-drives-the-price",
+      "statusCode": 301
+    },
+    {
+      "source": "/custom-vs-off-the-shelf-patio-screens.html",
+      "destination": "https://www.loveisblindstx.com/patio-shade-cost-what-drives-the-price",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/custom-vs-off-the-shelf-patio-screens",
+      "destination": "https://www.loveisblindstx.com/patio-shade-cost-what-drives-the-price",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/custom-vs-off-the-shelf-patio-screens.html",
+      "destination": "https://www.loveisblindstx.com/patio-shade-cost-what-drives-the-price",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/custom-vs-off-the-shelf-patio-screens",
+      "destination": "https://www.loveisblindstx.com/patio-shade-cost-what-drives-the-price",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/custom-vs-off-the-shelf-patio-screens.html",
+      "destination": "https://www.loveisblindstx.com/patio-shade-cost-what-drives-the-price",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/custom-vs-off-the-shelf-patio-screens",
+      "destination": "https://www.loveisblindstx.com/patio-shade-cost-what-drives-the-price",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/custom-vs-off-the-shelf-patio-screens.html",
+      "destination": "https://www.loveisblindstx.com/patio-shade-cost-what-drives-the-price",
+      "statusCode": 301
+    },
+    {
+      "source": "/motorized-patio-shades-save-money",
+      "destination": "https://www.loveisblindstx.com/cooling-texas-patio-shades-vs-fans-vs-misters",
+      "statusCode": 301
+    },
+    {
+      "source": "/motorized-patio-shades-save-money.html",
+      "destination": "https://www.loveisblindstx.com/cooling-texas-patio-shades-vs-fans-vs-misters",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/motorized-patio-shades-save-money",
+      "destination": "https://www.loveisblindstx.com/cooling-texas-patio-shades-vs-fans-vs-misters",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/motorized-patio-shades-save-money.html",
+      "destination": "https://www.loveisblindstx.com/cooling-texas-patio-shades-vs-fans-vs-misters",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/motorized-patio-shades-save-money",
+      "destination": "https://www.loveisblindstx.com/cooling-texas-patio-shades-vs-fans-vs-misters",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/motorized-patio-shades-save-money.html",
+      "destination": "https://www.loveisblindstx.com/cooling-texas-patio-shades-vs-fans-vs-misters",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/motorized-patio-shades-save-money",
+      "destination": "https://www.loveisblindstx.com/cooling-texas-patio-shades-vs-fans-vs-misters",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/motorized-patio-shades-save-money.html",
+      "destination": "https://www.loveisblindstx.com/cooling-texas-patio-shades-vs-fans-vs-misters",
+      "statusCode": 301
+    },
+    {
+      "source": "/patio-shades-texas-heat-dfw-homeowners",
+      "destination": "https://www.loveisblindstx.com/cooling-texas-patio-shades-vs-fans-vs-misters",
+      "statusCode": 301
+    },
+    {
+      "source": "/patio-shades-texas-heat-dfw-homeowners.html",
+      "destination": "https://www.loveisblindstx.com/cooling-texas-patio-shades-vs-fans-vs-misters",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/patio-shades-texas-heat-dfw-homeowners",
+      "destination": "https://www.loveisblindstx.com/cooling-texas-patio-shades-vs-fans-vs-misters",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/patio-shades-texas-heat-dfw-homeowners.html",
+      "destination": "https://www.loveisblindstx.com/cooling-texas-patio-shades-vs-fans-vs-misters",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/patio-shades-texas-heat-dfw-homeowners",
+      "destination": "https://www.loveisblindstx.com/cooling-texas-patio-shades-vs-fans-vs-misters",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/patio-shades-texas-heat-dfw-homeowners.html",
+      "destination": "https://www.loveisblindstx.com/cooling-texas-patio-shades-vs-fans-vs-misters",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/patio-shades-texas-heat-dfw-homeowners",
+      "destination": "https://www.loveisblindstx.com/cooling-texas-patio-shades-vs-fans-vs-misters",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/patio-shades-texas-heat-dfw-homeowners.html",
+      "destination": "https://www.loveisblindstx.com/cooling-texas-patio-shades-vs-fans-vs-misters",
+      "statusCode": 301
+    },
+    {
+      "source": "/motorized-patio-shades-cost-dfw",
+      "destination": "https://www.loveisblindstx.com/patio-shade-cost-what-drives-the-price",
+      "statusCode": 301
+    },
+    {
+      "source": "/motorized-patio-shades-cost-dfw.html",
+      "destination": "https://www.loveisblindstx.com/patio-shade-cost-what-drives-the-price",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/motorized-patio-shades-cost-dfw",
+      "destination": "https://www.loveisblindstx.com/patio-shade-cost-what-drives-the-price",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/motorized-patio-shades-cost-dfw.html",
+      "destination": "https://www.loveisblindstx.com/patio-shade-cost-what-drives-the-price",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/motorized-patio-shades-cost-dfw",
+      "destination": "https://www.loveisblindstx.com/patio-shade-cost-what-drives-the-price",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/motorized-patio-shades-cost-dfw.html",
+      "destination": "https://www.loveisblindstx.com/patio-shade-cost-what-drives-the-price",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/motorized-patio-shades-cost-dfw",
+      "destination": "https://www.loveisblindstx.com/patio-shade-cost-what-drives-the-price",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/motorized-patio-shades-cost-dfw.html",
+      "destination": "https://www.loveisblindstx.com/patio-shade-cost-what-drives-the-price",
+      "statusCode": 301
+    },
+    {
+      "source": "/pre-summer-patio-checklist-dfw",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/pre-summer-patio-checklist-dfw.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/pre-summer-patio-checklist-dfw",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/pre-summer-patio-checklist-dfw.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/pre-summer-patio-checklist-dfw",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/pre-summer-patio-checklist-dfw.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/pre-summer-patio-checklist-dfw",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/pre-summer-patio-checklist-dfw.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/motorized-patio-shades-installation-timeline-dfw",
+      "destination": "https://www.loveisblindstx.com/how-long-from-order-to-install",
+      "statusCode": 301
+    },
+    {
+      "source": "/motorized-patio-shades-installation-timeline-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-long-from-order-to-install",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/motorized-patio-shades-installation-timeline-dfw",
+      "destination": "https://www.loveisblindstx.com/how-long-from-order-to-install",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/motorized-patio-shades-installation-timeline-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-long-from-order-to-install",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/motorized-patio-shades-installation-timeline-dfw",
+      "destination": "https://www.loveisblindstx.com/how-long-from-order-to-install",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/motorized-patio-shades-installation-timeline-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-long-from-order-to-install",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/motorized-patio-shades-installation-timeline-dfw",
+      "destination": "https://www.loveisblindstx.com/how-long-from-order-to-install",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/motorized-patio-shades-installation-timeline-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-long-from-order-to-install",
+      "statusCode": 301
+    },
+    {
+      "source": "/patio-shades-vs-awnings-dfw",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/patio-shades-vs-awnings-dfw.html",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/patio-shades-vs-awnings-dfw",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/patio-shades-vs-awnings-dfw.html",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/patio-shades-vs-awnings-dfw",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/patio-shades-vs-awnings-dfw.html",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/patio-shades-vs-awnings-dfw",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/patio-shades-vs-awnings-dfw.html",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/patio-shades-west-facing-patios-dfw",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/patio-shades-west-facing-patios-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/patio-shades-west-facing-patios-dfw",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/patio-shades-west-facing-patios-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/patio-shades-west-facing-patios-dfw",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/patio-shades-west-facing-patios-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/patio-shades-west-facing-patios-dfw",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/patio-shades-west-facing-patios-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/patio-shades-south-facing-patios-dfw",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/patio-shades-south-facing-patios-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/patio-shades-south-facing-patios-dfw",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/patio-shades-south-facing-patios-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/patio-shades-south-facing-patios-dfw",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/patio-shades-south-facing-patios-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/patio-shades-south-facing-patios-dfw",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/patio-shades-south-facing-patios-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/patio-shades-east-facing-patios-dfw",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/patio-shades-east-facing-patios-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/patio-shades-east-facing-patios-dfw",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/patio-shades-east-facing-patios-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/patio-shades-east-facing-patios-dfw",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/patio-shades-east-facing-patios-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/patio-shades-east-facing-patios-dfw",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/patio-shades-east-facing-patios-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-much-sun-hits-each-side-of-a-texas-house",
+      "statusCode": 301
+    },
+    {
+      "source": "/outdoor-entertaining-patio-shades-dfw",
+      "destination": "https://www.loveisblindstx.com/creating-a-backyard-movie-theater-with-outdoor-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/outdoor-entertaining-patio-shades-dfw.html",
+      "destination": "https://www.loveisblindstx.com/creating-a-backyard-movie-theater-with-outdoor-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/outdoor-entertaining-patio-shades-dfw",
+      "destination": "https://www.loveisblindstx.com/creating-a-backyard-movie-theater-with-outdoor-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/outdoor-entertaining-patio-shades-dfw.html",
+      "destination": "https://www.loveisblindstx.com/creating-a-backyard-movie-theater-with-outdoor-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/outdoor-entertaining-patio-shades-dfw",
+      "destination": "https://www.loveisblindstx.com/creating-a-backyard-movie-theater-with-outdoor-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/outdoor-entertaining-patio-shades-dfw.html",
+      "destination": "https://www.loveisblindstx.com/creating-a-backyard-movie-theater-with-outdoor-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/outdoor-entertaining-patio-shades-dfw",
+      "destination": "https://www.loveisblindstx.com/creating-a-backyard-movie-theater-with-outdoor-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/outdoor-entertaining-patio-shades-dfw.html",
+      "destination": "https://www.loveisblindstx.com/creating-a-backyard-movie-theater-with-outdoor-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/patio-shades-for-pool-decks-dfw",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/patio-shades-for-pool-decks-dfw.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/patio-shades-for-pool-decks-dfw",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/patio-shades-for-pool-decks-dfw.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/patio-shades-for-pool-decks-dfw",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/patio-shades-for-pool-decks-dfw.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/patio-shades-for-pool-decks-dfw",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/patio-shades-for-pool-decks-dfw.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/pergola-patio-shades-dfw-memorial-day",
+      "destination": "https://www.loveisblindstx.com/outdoor-shades-for-porches-texas",
+      "statusCode": 301
+    },
+    {
+      "source": "/pergola-patio-shades-dfw-memorial-day.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-shades-for-porches-texas",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/pergola-patio-shades-dfw-memorial-day",
+      "destination": "https://www.loveisblindstx.com/outdoor-shades-for-porches-texas",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/pergola-patio-shades-dfw-memorial-day.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-shades-for-porches-texas",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/pergola-patio-shades-dfw-memorial-day",
+      "destination": "https://www.loveisblindstx.com/outdoor-shades-for-porches-texas",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/pergola-patio-shades-dfw-memorial-day.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-shades-for-porches-texas",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/pergola-patio-shades-dfw-memorial-day",
+      "destination": "https://www.loveisblindstx.com/outdoor-shades-for-porches-texas",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/pergola-patio-shades-dfw-memorial-day.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-shades-for-porches-texas",
+      "statusCode": 301
+    },
+    {
+      "source": "/wind-rated-patio-shades-dfw-storm-season",
+      "destination": "https://www.loveisblindstx.com/wind-rated-patio-shades-texas",
+      "statusCode": 301
+    },
+    {
+      "source": "/wind-rated-patio-shades-dfw-storm-season.html",
+      "destination": "https://www.loveisblindstx.com/wind-rated-patio-shades-texas",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/wind-rated-patio-shades-dfw-storm-season",
+      "destination": "https://www.loveisblindstx.com/wind-rated-patio-shades-texas",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/wind-rated-patio-shades-dfw-storm-season.html",
+      "destination": "https://www.loveisblindstx.com/wind-rated-patio-shades-texas",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/wind-rated-patio-shades-dfw-storm-season",
+      "destination": "https://www.loveisblindstx.com/wind-rated-patio-shades-texas",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/wind-rated-patio-shades-dfw-storm-season.html",
+      "destination": "https://www.loveisblindstx.com/wind-rated-patio-shades-texas",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/wind-rated-patio-shades-dfw-storm-season",
+      "destination": "https://www.loveisblindstx.com/wind-rated-patio-shades-texas",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/wind-rated-patio-shades-dfw-storm-season.html",
+      "destination": "https://www.loveisblindstx.com/wind-rated-patio-shades-texas",
+      "statusCode": 301
+    },
+    {
+      "source": "/patio-shade-fabric-openness-factor-dfw",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/patio-shade-fabric-openness-factor-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/patio-shade-fabric-openness-factor-dfw",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/patio-shade-fabric-openness-factor-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/patio-shade-fabric-openness-factor-dfw",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/patio-shade-fabric-openness-factor-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/patio-shade-fabric-openness-factor-dfw",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/patio-shade-fabric-openness-factor-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/patio-shades-outdoor-kitchens-dfw",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/patio-shades-outdoor-kitchens-dfw.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/patio-shades-outdoor-kitchens-dfw",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/patio-shades-outdoor-kitchens-dfw.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/patio-shades-outdoor-kitchens-dfw",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/patio-shades-outdoor-kitchens-dfw.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/patio-shades-outdoor-kitchens-dfw",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/patio-shades-outdoor-kitchens-dfw.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/solar-shade-vs-blackout-patio-shade-dfw",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/solar-shade-vs-blackout-patio-shade-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/solar-shade-vs-blackout-patio-shade-dfw",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/solar-shade-vs-blackout-patio-shade-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/solar-shade-vs-blackout-patio-shade-dfw",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/solar-shade-vs-blackout-patio-shade-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/solar-shade-vs-blackout-patio-shade-dfw",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/solar-shade-vs-blackout-patio-shade-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/dfw-backyard-summer-break-patio-shades",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/dfw-backyard-summer-break-patio-shades.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/dfw-backyard-summer-break-patio-shades",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/dfw-backyard-summer-break-patio-shades.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/dfw-backyard-summer-break-patio-shades",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/dfw-backyard-summer-break-patio-shades.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/dfw-backyard-summer-break-patio-shades",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/dfw-backyard-summer-break-patio-shades.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-measure-patio-for-exterior-shades-dfw",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-measure-patio-for-exterior-shades-dfw.html",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/how-to-measure-patio-for-exterior-shades-dfw",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/how-to-measure-patio-for-exterior-shades-dfw.html",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/how-to-measure-patio-for-exterior-shades-dfw",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/how-to-measure-patio-for-exterior-shades-dfw.html",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/how-to-measure-patio-for-exterior-shades-dfw",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/how-to-measure-patio-for-exterior-shades-dfw.html",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/motorized-vs-manual-patio-shades-dfw",
+      "destination": "https://www.loveisblindstx.com/motorized-patio-shades-for-texas-patios",
+      "statusCode": 301
+    },
+    {
+      "source": "/motorized-vs-manual-patio-shades-dfw.html",
+      "destination": "https://www.loveisblindstx.com/motorized-patio-shades-for-texas-patios",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/motorized-vs-manual-patio-shades-dfw",
+      "destination": "https://www.loveisblindstx.com/motorized-patio-shades-for-texas-patios",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/motorized-vs-manual-patio-shades-dfw.html",
+      "destination": "https://www.loveisblindstx.com/motorized-patio-shades-for-texas-patios",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/motorized-vs-manual-patio-shades-dfw",
+      "destination": "https://www.loveisblindstx.com/motorized-patio-shades-for-texas-patios",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/motorized-vs-manual-patio-shades-dfw.html",
+      "destination": "https://www.loveisblindstx.com/motorized-patio-shades-for-texas-patios",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/motorized-vs-manual-patio-shades-dfw",
+      "destination": "https://www.loveisblindstx.com/motorized-patio-shades-for-texas-patios",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/motorized-vs-manual-patio-shades-dfw.html",
+      "destination": "https://www.loveisblindstx.com/motorized-patio-shades-for-texas-patios",
+      "statusCode": 301
+    },
+    {
+      "source": "/patio-shade-maintenance-cleaning-dfw",
+      "destination": "https://www.loveisblindstx.com/how-to-clean-roller-shades-and-solar-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/patio-shade-maintenance-cleaning-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-to-clean-roller-shades-and-solar-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/patio-shade-maintenance-cleaning-dfw",
+      "destination": "https://www.loveisblindstx.com/how-to-clean-roller-shades-and-solar-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/patio-shade-maintenance-cleaning-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-to-clean-roller-shades-and-solar-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/patio-shade-maintenance-cleaning-dfw",
+      "destination": "https://www.loveisblindstx.com/how-to-clean-roller-shades-and-solar-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/patio-shade-maintenance-cleaning-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-to-clean-roller-shades-and-solar-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/patio-shade-maintenance-cleaning-dfw",
+      "destination": "https://www.loveisblindstx.com/how-to-clean-roller-shades-and-solar-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/patio-shade-maintenance-cleaning-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-to-clean-roller-shades-and-solar-screens",
+      "statusCode": 301
+    },
+    {
+      "source": "/patio-shades-vs-screened-in-porch-dfw",
+      "destination": "https://www.loveisblindstx.com/screened-porch-vs-motorized-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/patio-shades-vs-screened-in-porch-dfw.html",
+      "destination": "https://www.loveisblindstx.com/screened-porch-vs-motorized-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/patio-shades-vs-screened-in-porch-dfw",
+      "destination": "https://www.loveisblindstx.com/screened-porch-vs-motorized-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/patio-shades-vs-screened-in-porch-dfw.html",
+      "destination": "https://www.loveisblindstx.com/screened-porch-vs-motorized-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/patio-shades-vs-screened-in-porch-dfw",
+      "destination": "https://www.loveisblindstx.com/screened-porch-vs-motorized-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/patio-shades-vs-screened-in-porch-dfw.html",
+      "destination": "https://www.loveisblindstx.com/screened-porch-vs-motorized-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/patio-shades-vs-screened-in-porch-dfw",
+      "destination": "https://www.loveisblindstx.com/screened-porch-vs-motorized-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/patio-shades-vs-screened-in-porch-dfw.html",
+      "destination": "https://www.loveisblindstx.com/screened-porch-vs-motorized-patio-shades",
+      "statusCode": 301
+    },
+    {
+      "source": "/fathers-day-patio-shades-dfw",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/fathers-day-patio-shades-dfw.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/fathers-day-patio-shades-dfw",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/fathers-day-patio-shades-dfw.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/fathers-day-patio-shades-dfw",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/fathers-day-patio-shades-dfw.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/fathers-day-patio-shades-dfw",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/fathers-day-patio-shades-dfw.html",
+      "destination": "https://www.loveisblindstx.com/outdoor-comfort-with-exterior-patio-shades-for-texas-summers",
+      "statusCode": 301
+    },
+    {
+      "source": "/do-patio-shades-block-uv-rays-dfw",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/do-patio-shades-block-uv-rays-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/do-patio-shades-block-uv-rays-dfw",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/do-patio-shades-block-uv-rays-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/do-patio-shades-block-uv-rays-dfw",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/do-patio-shades-block-uv-rays-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/do-patio-shades-block-uv-rays-dfw",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/do-patio-shades-block-uv-rays-dfw.html",
+      "destination": "https://www.loveisblindstx.com/how-to-choose-patio-shade-openness-factor",
+      "statusCode": 301
+    },
+    {
+      "source": "/diy-vs-professional-patio-shade-installation-dfw",
+      "destination": "https://www.loveisblindstx.com/cost-to-install-blinds-diy-vs-professional",
+      "statusCode": 301
+    },
+    {
+      "source": "/diy-vs-professional-patio-shade-installation-dfw.html",
+      "destination": "https://www.loveisblindstx.com/cost-to-install-blinds-diy-vs-professional",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/diy-vs-professional-patio-shade-installation-dfw",
+      "destination": "https://www.loveisblindstx.com/cost-to-install-blinds-diy-vs-professional",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/diy-vs-professional-patio-shade-installation-dfw.html",
+      "destination": "https://www.loveisblindstx.com/cost-to-install-blinds-diy-vs-professional",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/diy-vs-professional-patio-shade-installation-dfw",
+      "destination": "https://www.loveisblindstx.com/cost-to-install-blinds-diy-vs-professional",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/diy-vs-professional-patio-shade-installation-dfw.html",
+      "destination": "https://www.loveisblindstx.com/cost-to-install-blinds-diy-vs-professional",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/diy-vs-professional-patio-shade-installation-dfw",
+      "destination": "https://www.loveisblindstx.com/cost-to-install-blinds-diy-vs-professional",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/diy-vs-professional-patio-shade-installation-dfw.html",
+      "destination": "https://www.loveisblindstx.com/cost-to-install-blinds-diy-vs-professional",
+      "statusCode": 301
+    },
+    {
+      "source": "/argyle",
+      "destination": "https://www.loveisblindstx.com/patio-shades-argyle-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/argyle.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-argyle-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/argyle",
+      "destination": "https://www.loveisblindstx.com/patio-shades-argyle-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/argyle.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-argyle-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/argyle",
+      "destination": "https://www.loveisblindstx.com/patio-shades-argyle-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/argyle.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-argyle-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/argyle",
+      "destination": "https://www.loveisblindstx.com/patio-shades-argyle-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/argyle.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-argyle-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/colleyville",
+      "destination": "https://www.loveisblindstx.com/patio-shades-colleyville-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/colleyville.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-colleyville-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/colleyville",
+      "destination": "https://www.loveisblindstx.com/patio-shades-colleyville-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/colleyville.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-colleyville-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/colleyville",
+      "destination": "https://www.loveisblindstx.com/patio-shades-colleyville-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/colleyville.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-colleyville-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/colleyville",
+      "destination": "https://www.loveisblindstx.com/patio-shades-colleyville-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/colleyville.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-colleyville-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/denton",
+      "destination": "https://www.loveisblindstx.com/patio-shades-denton-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/denton.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-denton-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/denton",
+      "destination": "https://www.loveisblindstx.com/patio-shades-denton-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/denton.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-denton-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/denton",
+      "destination": "https://www.loveisblindstx.com/patio-shades-denton-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/denton.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-denton-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/denton",
+      "destination": "https://www.loveisblindstx.com/patio-shades-denton-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/denton.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-denton-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/flower-mound",
+      "destination": "https://www.loveisblindstx.com/patio-shades-flower-mound-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/flower-mound.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-flower-mound-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/flower-mound",
+      "destination": "https://www.loveisblindstx.com/patio-shades-flower-mound-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/flower-mound.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-flower-mound-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/flower-mound",
+      "destination": "https://www.loveisblindstx.com/patio-shades-flower-mound-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/flower-mound.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-flower-mound-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/flower-mound",
+      "destination": "https://www.loveisblindstx.com/patio-shades-flower-mound-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/flower-mound.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-flower-mound-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/fort-worth",
+      "destination": "https://www.loveisblindstx.com/patio-shades-fort-worth-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/fort-worth.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-fort-worth-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/fort-worth",
+      "destination": "https://www.loveisblindstx.com/patio-shades-fort-worth-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/fort-worth.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-fort-worth-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/fort-worth",
+      "destination": "https://www.loveisblindstx.com/patio-shades-fort-worth-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/fort-worth.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-fort-worth-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/fort-worth",
+      "destination": "https://www.loveisblindstx.com/patio-shades-fort-worth-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/fort-worth.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-fort-worth-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/granbury",
+      "destination": "https://www.loveisblindstx.com/patio-shades-granbury-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/granbury.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-granbury-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/granbury",
+      "destination": "https://www.loveisblindstx.com/patio-shades-granbury-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/granbury.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-granbury-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/granbury",
+      "destination": "https://www.loveisblindstx.com/patio-shades-granbury-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/granbury.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-granbury-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/granbury",
+      "destination": "https://www.loveisblindstx.com/patio-shades-granbury-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/granbury.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-granbury-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/justin",
+      "destination": "https://www.loveisblindstx.com/patio-shades-justin-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/justin.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-justin-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/justin",
+      "destination": "https://www.loveisblindstx.com/patio-shades-justin-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/justin.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-justin-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/justin",
+      "destination": "https://www.loveisblindstx.com/patio-shades-justin-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/justin.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-justin-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/justin",
+      "destination": "https://www.loveisblindstx.com/patio-shades-justin-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/justin.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-justin-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/keller",
+      "destination": "https://www.loveisblindstx.com/patio-shades-keller-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/keller.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-keller-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/keller",
+      "destination": "https://www.loveisblindstx.com/patio-shades-keller-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/keller.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-keller-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/keller",
+      "destination": "https://www.loveisblindstx.com/patio-shades-keller-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/keller.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-keller-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/keller",
+      "destination": "https://www.loveisblindstx.com/patio-shades-keller-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/keller.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-keller-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/northlake",
+      "destination": "https://www.loveisblindstx.com/patio-shades-northlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/northlake.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-northlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/northlake",
+      "destination": "https://www.loveisblindstx.com/patio-shades-northlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/northlake.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-northlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/northlake",
+      "destination": "https://www.loveisblindstx.com/patio-shades-northlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/northlake.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-northlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/northlake",
+      "destination": "https://www.loveisblindstx.com/patio-shades-northlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/northlake.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-northlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/roanoke",
+      "destination": "https://www.loveisblindstx.com/patio-shades-roanoke-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/roanoke.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-roanoke-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/roanoke",
+      "destination": "https://www.loveisblindstx.com/patio-shades-roanoke-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/roanoke.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-roanoke-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/roanoke",
+      "destination": "https://www.loveisblindstx.com/patio-shades-roanoke-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/roanoke.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-roanoke-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/roanoke",
+      "destination": "https://www.loveisblindstx.com/patio-shades-roanoke-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/roanoke.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-roanoke-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/southlake",
+      "destination": "https://www.loveisblindstx.com/patio-shades-southlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/southlake.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-southlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/southlake",
+      "destination": "https://www.loveisblindstx.com/patio-shades-southlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/southlake.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-southlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/southlake",
+      "destination": "https://www.loveisblindstx.com/patio-shades-southlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/southlake.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-southlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/southlake",
+      "destination": "https://www.loveisblindstx.com/patio-shades-southlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/southlake.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-southlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/trophy-club",
+      "destination": "https://www.loveisblindstx.com/patio-shades-trophy-club-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/trophy-club.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-trophy-club-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/trophy-club",
+      "destination": "https://www.loveisblindstx.com/patio-shades-trophy-club-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/trophy-club.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-trophy-club-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/trophy-club",
+      "destination": "https://www.loveisblindstx.com/patio-shades-trophy-club-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/trophy-club.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-trophy-club-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/trophy-club",
+      "destination": "https://www.loveisblindstx.com/patio-shades-trophy-club-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/trophy-club.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-trophy-club-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/weatherford",
+      "destination": "https://www.loveisblindstx.com/patio-shades-weatherford-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/weatherford.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-weatherford-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/weatherford",
+      "destination": "https://www.loveisblindstx.com/patio-shades-weatherford-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/weatherford.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-weatherford-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/weatherford",
+      "destination": "https://www.loveisblindstx.com/patio-shades-weatherford-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/weatherford.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-weatherford-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/weatherford",
+      "destination": "https://www.loveisblindstx.com/patio-shades-weatherford-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/weatherford.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-weatherford-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/westlake",
+      "destination": "https://www.loveisblindstx.com/patio-shades-westlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/westlake.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-westlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/westlake",
+      "destination": "https://www.loveisblindstx.com/patio-shades-westlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/westlake.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-westlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/westlake",
+      "destination": "https://www.loveisblindstx.com/patio-shades-westlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/westlake.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-westlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/westlake",
+      "destination": "https://www.loveisblindstx.com/patio-shades-westlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/westlake.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-westlake-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/grapevine",
+      "destination": "https://www.loveisblindstx.com/patio-shades-grapevine-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/grapevine.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-grapevine-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/grapevine",
+      "destination": "https://www.loveisblindstx.com/patio-shades-grapevine-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/grapevine.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-grapevine-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/grapevine",
+      "destination": "https://www.loveisblindstx.com/patio-shades-grapevine-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/grapevine.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-grapevine-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/grapevine",
+      "destination": "https://www.loveisblindstx.com/patio-shades-grapevine-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/grapevine.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-grapevine-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/benbrook",
+      "destination": "https://www.loveisblindstx.com/patio-shades-fort-worth-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/benbrook.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-fort-worth-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/benbrook",
+      "destination": "https://www.loveisblindstx.com/patio-shades-fort-worth-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/benbrook.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-fort-worth-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/benbrook",
+      "destination": "https://www.loveisblindstx.com/patio-shades-fort-worth-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/benbrook.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-fort-worth-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/benbrook",
+      "destination": "https://www.loveisblindstx.com/patio-shades-fort-worth-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/benbrook.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-fort-worth-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/stephenville",
+      "destination": "https://www.loveisblindstx.com/patio-shades-granbury-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/stephenville.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-granbury-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/stephenville",
+      "destination": "https://www.loveisblindstx.com/patio-shades-granbury-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/stephenville.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-granbury-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/stephenville",
+      "destination": "https://www.loveisblindstx.com/patio-shades-granbury-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/products/stephenville.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-granbury-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/stephenville",
+      "destination": "https://www.loveisblindstx.com/patio-shades-granbury-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/cities/stephenville.html",
+      "destination": "https://www.loveisblindstx.com/patio-shades-granbury-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/faqs",
+      "destination": "https://www.loveisblindstx.com/faqs",
+      "statusCode": 301
+    },
+    {
+      "source": "/:path((?!robots\\.txt$|sitemap\\.xml$|googlec3ca74b0d3ee05d3\\.html$).*)",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
+      "statusCode": 301
+    }
   ]
 }
