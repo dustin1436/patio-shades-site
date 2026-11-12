@@ -1480,42 +1480,42 @@
     },
     {
       "source": "/diy-vs-professional-patio-shade-installation-dfw",
-      "destination": "https://www.loveisblindstx.com/cost-to-install-blinds-diy-vs-professional",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
       "statusCode": 301
     },
     {
       "source": "/diy-vs-professional-patio-shade-installation-dfw.html",
-      "destination": "https://www.loveisblindstx.com/cost-to-install-blinds-diy-vs-professional",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
       "statusCode": 301
     },
     {
       "source": "/blog/diy-vs-professional-patio-shade-installation-dfw",
-      "destination": "https://www.loveisblindstx.com/cost-to-install-blinds-diy-vs-professional",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
       "statusCode": 301
     },
     {
       "source": "/blog/diy-vs-professional-patio-shade-installation-dfw.html",
-      "destination": "https://www.loveisblindstx.com/cost-to-install-blinds-diy-vs-professional",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
       "statusCode": 301
     },
     {
       "source": "/products/diy-vs-professional-patio-shade-installation-dfw",
-      "destination": "https://www.loveisblindstx.com/cost-to-install-blinds-diy-vs-professional",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
       "statusCode": 301
     },
     {
       "source": "/products/diy-vs-professional-patio-shade-installation-dfw.html",
-      "destination": "https://www.loveisblindstx.com/cost-to-install-blinds-diy-vs-professional",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
       "statusCode": 301
     },
     {
       "source": "/cities/diy-vs-professional-patio-shade-installation-dfw",
-      "destination": "https://www.loveisblindstx.com/cost-to-install-blinds-diy-vs-professional",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
       "statusCode": 301
     },
     {
       "source": "/cities/diy-vs-professional-patio-shade-installation-dfw.html",
-      "destination": "https://www.loveisblindstx.com/cost-to-install-blinds-diy-vs-professional",
+      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
       "statusCode": 301
     },
     {
@@ -2201,11 +2201,6 @@
     {
       "source": "/faqs",
       "destination": "https://www.loveisblindstx.com/faqs",
-      "statusCode": 301
-    },
-    {
-      "source": "/:path((?!robots\\.txt$|sitemap\\.xml$|googlec3ca74b0d3ee05d3\\.html$).*)",
-      "destination": "https://www.loveisblindstx.com/products/exterior-patio-shades",
       "statusCode": 301
     }
   ]
